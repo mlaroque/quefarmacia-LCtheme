@@ -1,0 +1,948 @@
+/*
+Theme Name: quefarmacia-child
+Theme URI: http://320press.com/wpbs
+Description: A simple responsive theme based on the Bootstrap framework. Includes multiple page templates, two different sidebars and a theme options panel.
+Version: 3.3.1
+Author: La comuna
+Author URI: http://lacomuna.mx
+Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-template, theme-options
+License: GNU General Public License v2.0 & Apache License 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/licenses/LICENSE-2.0
+Template: wordpress-bootstrap-master
+*/
+
+/*transform: scale(1.02);*/
+/* latin */
+
+.navbar {border: none}
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {margin: 0}
+.navbar-brand {padding: 10px; height: auto;}
+.navbar-brand > img {max-width: 110px}
+.g-recaptcha {transform: scale(0.65); transform-origin: left top;}
+.tt-dataset h3 { color: #8fbe00;font-weight: 400;text-transform: uppercase;}
+.pregico { padding: 10px; border-radius: 10px;}
+.QFopinaBTN .btn {width: 100%; float: left; margin: 5px auto}
+
+ body {  font-weight: 400; padding-top: 0; background: #fff; }
+   
+h1, h3, h4 { font-weight: 400; color: # }
+h1 {margin: 0 auto 20px auto}
+h2 { font-weight: 400; color: # }
+p, li, h5, h6, h4 { font-weight: 400; }
+p {font-size: 16px; line-height: 40px; }
+ul, ol, li {font-size: 16px;}
+li {line-height: 27px; padding: 6px 0;}
+
+
+.page-header { margin: 5px 0 10px;}
+ol.breadcrumb { margin: 0 0 5px 0; padding: 0; }
+.breadcrumb {background: transparent}
+.breadcrumb li { font-size: 12px; margin: 0; padding: 0; line-height: normal; }
+.mt3 {margin: 3px 0}
+/*PORTADA*/
+.page-template-portadaQF .hpMedicamentos {padding:30px 0 30px 0;}
+ul#list-list { min-width: 100%; list-style: none; padding: 0;}
+ul#list-list li { display: inline-flex; margin: 0 5px}
+ul#list-list a, ul#list-list a:visited {padding: 2px 10px; font-size: 14px; color: #fff; text-decoration: none; line-height: normal;  }
+ul#list-list a:hover{ color: #fff; text-decoration: underline;}
+.postid-2155 .hpBuscador {background: #1badb5; color: #fff; padding: 18px 0 15px; display: block; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+.hpPopular {margin: 40px 0 40px 0; display: block;}
+.queB{font-size: 22px; font-weight: 700; margin: 7px 0; text-transform: uppercase; color: #fff}
+.hpQues, .hpFarma, .hpEncuentra { margin: 40px 0; }
+.page-id-5210 .affix {position: relative !important;}
+
+.page-id-5210 .affix .hpMedicamentos input { height: 46px; padding: 10px 16px; font-size: 18px; line-height: 1.33; border-radius: 6px; }
+
+
+.hpMedicamentos {background: #1badb5; padding: 10px 0}
+.hpMedicamentos h2 {font-size: 25px; margin: 30px auto; color: #fff; text-align: center; font-weight: 400 }
+.hpMedicamentos p {font-size: 17px; color:#fff; line-height: normal; margin-top: 20px; }
+
+@media (min-width: 768px) {
+.page-template-portadaQF .hpBuscador {padding:100px 0 110px 0;}
+.hpMedicamentos h2 {font-size: 54px; margin: 40px auto; }
+.hpMedicamentos p {font-size: 22px; color:#fff; line-height: normal; margin-top: 20px; }
+ul#list-list a, ul#list-list a:visited{ font-size:16px;padding: 5px 10px; }
+.hpPopular {margin: 60px 0 40px 0; display: block;}
+.hpQues, .hpFarma, .hpEncuentra { margin: 60px 0; }
+}
+
+/* Go to TOP ------------------------------------------------------- */
+#myBtn { width: 50px; height: 50px; display: none; position: fixed; color: #fff;bottom: 125px; right: 15px; z-index: 99; border: none; outline: none; background-color: #eeb510; cursor: pointer; padding:0 4px; border-radius: 4px; font-size: 30px; font-weight: 700; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; }
+#myBtn p{ font-size: 12px; color: #fff; margin-top: 0 }
+#myBtn:hover { background-color: #26a9e9; color: #fff;/* Add a dark-grey background on hover */}
+ 
+.upper {text-transform: uppercase;}
+.ls2 {letter-spacing: 2px}
+.lc_ads {margin: 15px auto; padding: 10px 0; width: 100%; text-align: center; float: left;}
+.lc_ads a { display: inline-block; text-align: center; }
+.lc_ads img { text-align: center; margin: 0 auto; }
+.canitas img { max-width: 100%; height: auto; }
+
+.marPad0 {margin:0; padding: 0}
+.padMar0 {margin: 0 auto; padding: 0}
+.affix .navInt{ background: #016751; border-bottom: 1px solid #ccc }
+.xxs {font-size: 10px; line-height: 11px; text-transform: uppercase;; margin:3px 0; padding: 0}
+.blanco {color: #fff}
+
+/*****:::::::::::::::::::::::::::ESTILOS ENCUESTA MEDICAMENTO REVISAR:::::::::::::::::::::::::******/
+.ec-stars-wrapper { text-decoration: none; display: inline-block; font-size: 20px;color: #ccc; width: 100%; padding: 0 5px; margin: 10px auto; }
+.ec-stars-wrapper a { text-decoration: none; display: inline-block; font-size: 20px; color: #888; }
+.ec-stars-wrapper:hover a { color: #FFC870; }
+.ec-stars-wrapper > a:hover ~ a { color: #888; }
+    
+/*:::::::::::::::::::::::COLORES FONDO**************************/
+.eb6841BG { background: #fa3c08 !important}
+.eb6841 { color: #fa3c08 !important}
+.verdeBG { background: #8fbe00 !important}
+.amarilloBG {background: #fbc932 !important}
+.marinoBG {background: #00c4a0 !important}
+.azul2 {color: #6fc3c8 !important}
+.azul {color: #1badb5 !important}
+.azulBG {background: #02a4af !important}
+.blue {color: #0018ae !important}
+.blueBG {background: #0018ae !important}
+.morado {color: #552ed9 !important}
+.moradoBG {background: #552ed9 !important}
+.frambuesa {color: #d00175 !important}
+.frambuesaBG {background: #d00175 !important}
+.grisBk { color: #282828 !important}
+.grisBG { background: #666 !important}
+.negroBG {background:#000 !important}
+.rojoBG { background: #ff0000 !important}
+.blaco { color: #fff !important}
+.blacoBG { background: #fff !important}
+.marinoQF { color: #1badb5}
+.marinoQFBG {background: #1badb5}
+.estat {line-height: normal}
+.rosaBG {background: #E3536C}
+.genericBG {background: #d2d2d2;}
+.verde {color: #8fbe00}
+.amarillo {color: #eeb510}
+.naranja {color: #eb6841}
+
+.btn, .btn a:hover, .btn a:focus, .btn a:visited {color: #fff !important; text-decoration: none !important}
+.btn {white-space: inherit;}
+.btn-eb6841,.btn-eb6841:visited {background-color: #ff9900;border-color: #f58b01;color: #fff;}
+.btn-eb6841:hover {background-color: #ff6600;border-color: #f57401;color: #fff;}
+.btn-rosa, .btn-rosa:visited{ background-color: #E3536C; border-color: #E3536C; color: #fff;  }
+.btn-rosa:hover, .btn-rosa:focus{ background-color: #f57401; border-color: #f57401; color: #fff; }
+.btn-naranja, .btn-naranja:visited{ background-color: #f58b01; border-color:#f58b01 ; color: #fff;  }
+.btn-naranja:hover, .btn-naranja:focus{ background-color: #f57401; border-color: #f57401; color: #fff; }
+.btn-grisOut{background: #fff; color: #6d6d6d !important; font-weight: 700; border:2px solid #cdcdcd; text-decoration: none;  transition: 0.25s;}
+.btn-verde {border:2px solid #89C540;}
+.btn-grisOut:hover,.btn-grisOut:focus { box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover); border-color: #ddd; color: #6d6d6d; background: #ddd }
+.btn {-webkit-backface-visibility: hidden;
+-moz-osx-font-smoothing: grayscale;  transition: 0.25s; font-weight: 700}
+.usuarioDo p { margin: 0; line-height: 30px; }
+.btn-marinoOut{background: #fff; color: #1badb5 !important; font-weight: 700; border:2px solid #1badb5; text-decoration: none;  transition: 0.25s; text-transform: uppercase;}
+.btn-marinoOut:hover,.btn-marinoOut:focus { box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover); border-color: #1badb5; color: #fff !important; background: #1badb5 }
+
+/* BUSCAR ESTÃ EN MUCHAS PAGINAS ------------------------------------------------------- */
+.btn-buscar { background-color: orange; border-color: orange; color: #fff; }
+.btn-buscar.focus, .btn-buscar:focus { background-color: darkorange; border-color: darkorange; color: #fff; }
+.btn-buscar:visited { background-color: orange; border-color: orange; color: #fff; }
+.btn-buscar:hover { background-color: darkorange; border-color: darkorange; color: #fff; }
+/* FORMULARIO OPINIONES ------------------------------------------------------- */
+.btn-Iopinion { background-color: #EB6379; border-color: #E3536C; color: #fff; margin: 10px auto; }
+.btn-Iopinion.focus, .btn-Iopinion:focus { background-color: #E3536C; border-color: #EB6379; color: #fff; }
+.btn-Iopinion:visited { background-color: #E3536C; border-color: #EB6379; color: #fff; }
+.btn-Iopinion:hover { background-color: #E3536C; border-color: #EB6379; color: #fff; }
+.listResFarmaR {  background: #f5f5f0 none repeat scroll 0 0; border: 1px solid #e9e7e7; box-shadow: none; float: left;margin: 5px 0 5px 0; padding-right: 0; padding-left: 0; }
+.listResFarmaR h3 {font-size: 22px; word-break: normal; }
+/* BOX ITEM LABORATORIOS ------------------------------------------------------- */
+.qfLABboxInfoo table { display: block !important; }
+.qfLABboxInfoo table, .qfLABboxInfoo table th, .qfLABboxInfoo table td { border-collapse: none; vertical-align: top;}
+.qfLABboxtelefono p {text-align: center; padding: 7px 0; font-size: 16px}
+
+.labOpinfo {font-size: 20px}
+.navbar-header {width: 100%}
+.navbar { border-radius: 0; margin-bottom: 0; }
+.navbar .navbar-nav > li > a, .navbar .navbar-nav > li > a:visited { color: #4c5166; text-decoration: none; font-size: 16px; font-weight: 400; }
+.navbar .navbar-nav > li > a:focus, .navbar .navbar-nav > li > a:hover { color: #1badb5; background-color: transparent; }
+.active {color: #1badb5}
+.nav > li {padding: 0}
+.navbar-nav > li > a {padding-bottom: 21px;padding-top: 21px;}
+/* TABLAS FARMACIAS ------------------------------------------------------- */
+table {width:100%; border-collapse: collapse; border: 1px solid #C1D2D0;}
+table th, table td { padding: 10px; width: auto !important;}   
+tbody td {display: table-cell;  text-align:left !important; font-size: 14px; line-height: 16px; color: #5c6176;}
+th { color: #fff; background: #1badb5; font-weight:700; text-align: left !important; text-transform: uppercase; }
+tr {border-bottom: 1px dashed #C1D2D0}
+table tbody tr:nth-of-type(2n+1) { background-color: rgba(0,0,0,.05); }
+table th a, table th a:visited, table th a:hover, table th a:focus { color: #fff; text-decoration: underline; line-height: normal; }
+/* RESPONSIVE TABLE------------------------------------------------------- */
+@media screen and (max-width: 678px) {
+table {width:100%;}
+thead {display: none;}
+tbody td {display: block;  text-align:left !important;}
+tbody td:before { content: attr(data-th); display: inline-block; margin-right: 10px; float: left; color: #1badb5; font-weight: 400 }
+}
+table td a { color: #5c6176; text-decoration: underline; }
+
+.ultimasGuias {display: inline-block; margin: 40px auto;}
+.ultimasGuias a {text-decoration: none; color: #5c6176}
+.ugBox { margin-bottom: 30px; background:#fff; border:1px solid #eaeaea;  }
+.ugImg { min-height: 110px; overflow: hidden; text-align: center;  max-height: 110px; vertical-align: middle;}
+.ugImg img {max-width: 100%; max-height: 100%; padding: 0}
+.ugTxt p {line-height: normal; text-align: center; font-size: 14px; padding: 0 4px 4px 4px; color: #5c6176; line-height: normal;}
+.ultimasGuias a:hover p { color: #1badb5 }
+
+/*TWITTER SUGERENCIAS------------------------------------*/
+.typeahead { background-color: #fff; }
+.twitter-typeahead { width: 100%; }
+.form-control:focus, .typeahead:focus { border: 1px solid #f58b01; box box-shadow: 0 1px 1px #404040 inset, 0 0 8px #feac69 }
+.tt-query { -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+.tt-hint { color: #5c6176;  }
+.tt-menu { width: 422px; margin: 12px 0; padding: 8px 0; background-color: #fff; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.2); -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);  -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2); box-shadow: 0 5px 10px rgba(0,0,0,.2); }
+.tt-suggestion { padding: 3px 20px; font-size: 18px; line-height: 24px; color: #5c6176; }
+.tt-suggestion:hover { cursor: pointer; color: #fff; background-color: #1badb5; }
+.tt-suggestion.tt-cursor { color: #fff; background-color: #1badb5; }
+.tt-suggestion p { margin: 0;  }
+.gist {font-size: 14px;}
+input{ text-rendering: auto; color: initial; letter-spacing: normal; word-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none; display: inline-block; text-align: start; margin: 0em 0em 0em 0em; font-size: 13.3333px; }
+
+.farmasRe {box-shadow: 0 0 16px #ccc; min-height: 170px; margin: 20px 0; border-radius: 8px} 
+.farmasRe:hover {transition: all .3s cubic-bezier(.4,0,.2,1); box-shadow: 0 16px 24px 2px rgba(0,0,0,.10),0 6px 30px 5px rgba(0,0,0,.10),0 8px 10px -5px rgba(0,0,0,.4);}
+.farmasRe a, .farmasRe a:hover, .farmasRe a:visited { text-decoration: none;}
+.farmasReImg { min-height: 130px; margin: 10px auto;} 
+.farmasReImg img { max-width: 100%} 
+.farmasReTit a, .farmasReTit a:visited{ color:#fff; text-decoration: none; }
+.farmasReTit { color:#fff; text-decoration: none; background: #8fbe00; width: 100%} 
+.farmasRe:hover .farmasReTit{ color:#fff; text-decoration: none; background:#eeb510 } 
+.farmasReTit p { margin: 0; padding: 5px 0; line-height: normal; font-size: 16px; font-weight: 400;  text-transform: uppercase; letter-spacing: 2px; }
+.infoPRODBox p {line-height: 20px; font-size: 16px }
+.QFinfoBox {box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); padding: 10px 20px; border-radius: 4px;margin-bottom: 30px; float: left; min-height: 30px; border: 1px solid #ebebeb;}
+.QFinfoBox b {color: #454a5f}
+.QFinfoBox p {color: #5c6176; line-height: normal;}
+.QFStar {text-align: center; margin-top: 10px; margin-bottom: 10px}
+.QFStar .fa { color: #eeb510 !important; font-size: 25px; margin: 10px 0; }
+/* INDICE DE NAVEGACION ------------------------------------------------------- */
+/* FILTROS LISTADO SINTOMAS ------------------------------------------------------- */
+.navInt { width: 100%; text-align: center; margin: 20px 0 }
+.navInt a, .navInt a:visited { font-size: 16px; padding: 5px 10px; font-weight: 700; color: #1badb5; float: left; border-radius: 3px;
+/*border: 1px solid #1badb5; border-radius: 4px; line-height: normal;*/ }
+.navInt a:hover, .navInt a:focus { background: #1badb5; color: #fff; }
+
+.opinaa p { color: #686868; line-height: normal; }
+.well-price { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); background-color: #fff }
+/* SEIDEBAR DE FARMACIAS ------------------------------------------------------- */
+#sidebar1 {margin-top: 40px}
+#sidebar1 .widget {border:1px solid #ddd;}
+#sidebar1 ul { list-style-type: disc; margin: 0 auto; display: inline-block; width: 100%; padding: 0 5%; }
+#sidebar1 li { width: 100%; clear: both; float: left; font-size: 16px; font-weight: normal !important; list-style-position: inside; margin: 5px auto; }
+#sidebar1 .widgettitle { border-bottom: 1px dashed #e8e8e8; margin-bottom: 9px; padding-bottom: 10px; text-align: center; font-size: 24px }
+#sidebar1 .widget_text { background: #fff}
+#sidebar1 li a, #sidebar1 li a:visited {color: #666; text-decoration: none}
+#sidebar1 li a:hover {color: #f58b01; text-decoration: none}
+
+/* FOOTER ------------------------------------------------------- */
+footer { background: #333030 none repeat scroll 0 0; padding-bottom: 130px; padding-top: 50px; }
+#inner-footer {width: 90%; margin: 0 auto}
+#widget-footer h3 {color: #fff; font-weight: 400; font-size: 20px; }
+#widget-footer .widgettitle { text-decoration: none; color: #efefef; width: 100%; float: left; font-size: 14px; font-weight: 700;text-transform: uppercase; letter-spacing: 1px; font-size: 16px; margin-top: 40px}
+#widget-footer .textwidget { text-decoration: none; color: #efefef; width: 100%; float: left; font-size: 14px; font-weight: 700;letter-spacing: 1px; font-size: 16px}
+#widget-footer .widget a { color: #b1b1b1;text-decoration: none; }
+#widget-footer .widget a:hover { color: #fff}
+#widget-footer .widget p { color: #fff}
+#widget-footer li { clear: both; float: left; font-size: 14px; font-weight: 400; margin: 0 auto; }
+#widget-footer ul { list-style-type: none; margin: 0; }
+.QFbottom ul li {list-style-type: none; display: inline; padding: 5px 20px; width: 100%; float: left; }
+.QFbottom ul {float: left; text-align: center; padding: 15px 0; border-top: 1px solid #444; border-bottom: 1px solid #444 }
+.QFbottom a {color: #888 !important; text-decoration: none; }
+.QFbottom a:hover {color: #fff !important }
+@media (min-width: 768px){ 
+.QFbottom ul li {float: none; }
+.QFbottom ul {float: none; }
+.QFlistSmlImg {min-height: 66px}
+.QFStar { text-align: left;}
+.QFopinaBTN .btn {float: left; width: auto; margin: 5px}
+.farmasReTit p { min-height: 54px; line-height: normal }
+}
+ul.brdtNo,.brdtNo ul, .brdtNo{border-top: none}
+.footprecios hr {border-color: #666}
+/* ACCORDION EN MEDICAMENTOS Y REMEDIOS -------------------------------*/
+a.toggle {width: 100%; display: block; background: #1badb5; border: 2px solid #1badb5; color: #fff; padding: .75em; border-radius: 0.15em 0.15em 0 0;
+text-decoration: none; overflow: auto; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1); margin-top: 10px;}
+.QFopen, .QFclose {float: right;}
+a.toggle h2 { padding: 0; margin: 0; overflow: hidden; cursor: pointer;color: #fff; font-size: 26px; }
+.accordion-body h3 { margin-top: 10px }
+.accordion-body {box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); transition: all 0.3s cubic-bezier(.25,.8,.25,1); padding:10px; }
+
+.ii-well {  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); text-align: left; }
+.ii-well a { text-align: left; font-size: 16px; text-transform: uppercase; color: #454545; line-height: normal; width: 100%; margin: 10px 0; }
+.ii-well img {float: left;}
+
+/*NEW BOXES INFO META LABORATORIOS*/
+.qfLABboxInfoo {border-radius: 4px; border: 2px solid #88b0b9; width: 100%; margin-bottom: 20px;
+box-shadow: 0 6px 28px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)}
+.qfLABboxInfoo td,.qfLABboxInfoo th{ vertical-align: middle; padding:5px; text-align: center !important; border:none;}
+.qfLABboxInfoo p { color: #505051; text-align: left;font-size: 12px; margin: 0 auto; padding: 6px 0; line-height: 14px;}
+.estudios p { color: #505051; text-align: center;font-size: 14px; margin: 0 auto; padding: 6px 0; line-height: 19px;}
+.qfLABboxInfoo h3 { text-align: center !important; color: #fff;font-size: 40px; font-weight: 400; margin: 0 auto; padding: 0; line-height: 40px; }
+.qfLABinfoDark {color: #505051 !important;}
+.qfLABboxInfoo h4 { text-align: left; color: #505051;font-size: 16px; font-weight: normal; margin: 0 auto; padding: 0; line-height: 20px; }
+.qfLABboxInfoo h5 { text-align: left; /*color: #505051*/font-size: 14px; font-weight: 600; margin: 0 auto; padding: 0; line-height: 18px; }
+.qfLABboxInfooP h3 { color: #fff;font-size: 20px; font-weight: 400; margin: 0 auto; padding: 0; line-height: 28px; text-transform: uppercase;}
+
+.qfLABboxInfoobg, .qfLABboxInfoobg h4, .qfLABboxInfoobg p {background: #88b0b9; color: #fff}
+.qfLABboxInfooimg {max-height: 69px}
+.web, .phone, .i-info p  {font-size: 17px; line-height: normal;}
+.web a, .web a:visited {color: #454a5f; text-decoration: none;}
+.web a:hover { color: #1badb5; text-decoration: underline;}
+
+.QfBoxAzul {box-shadow: 0 6px 28px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); transition: all 0.3s cubic-bezier(.25,.8,.25,1); border:1px solid #1badb5; background: #88b0b9; color: #fff}
+
+.qfLABboxStars .fa { color: #eeb510; font-size: 20px; margin:  0 auto 3px 0; }
+.qfLABboxInfooYN img {width: 18px}
+.qfLABboxtelefono p {text-align: center; padding: 7px 0; font-size: 16px}
+
+/***********MEDICOS***************/
+.medInfoTop {box-shadow: 0 6px 28px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); transition: all 0.3s cubic-bezier(.25,.8,.25,1); border:1px solid #8fbe00; background: #8fbe00; color: #fff}
+.medInfoTopSml {box-shadow: 0 6px 28px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); margin-bottom: 23px; transition: all 0.3s cubic-bezier(.25,.8,.25,1); border:1px solid #1badb5; color: #005d65 }
+.medInfoTopSml img {width: 60px}
+.medInfoTopSml a , .medInfoTopSml a:visited {color: #007d85}
+.medInfoTopSml a, .medInfoTopSml a:visited {color: #007d85; text-decoration: none; border-top: 1px dashed #1badb5; border-bottom: 1px dashed #1badb5; padding: 3px; margin-top: 3px; width: 100%; display: inline-block;}
+.medInfoTopSml a:hover, .medInfoTopSml a:focus {color: #1badb5; border-top: 1px solid #1badb5; border-bottom: 1px solid #1badb5;  text-decoration: none;}
+.single-doctores h3 { font-family: 'Ubuntu', sans-serif; font-weight: 400; font-size: 19px; color: #1badb5; }
+.docRat {font-size: 50px; font-weight: 600; color: #48545c; text-align: center;}
+.docStars { font-size: 20px; margin-bottom: 10px; border-bottom: 1px dashed #fff; text-align: center; padding-bottom: 10px}
+.docIndice {border-left: none; border-bottom: 1px dashed #ddd; margin-bottom: 10px }
+.docStars .fa { font-size: 18px; text-align: center; }
+.docStars b {color: #fff}
+.docMap {width: 100%; text-align: center; margin:10px auto;}
+.docMap img {width: 100%;}
+span.docOpi {color:#48545c; text-align: center; font-size: 16px }
+span.docOpi, span.docOpi a {color:#fff; text-align: center; font-size: 16px }
+.docIndice ul{ padding: 0; list-style-position: inside; }
+.docIndice a{ color:#fff; text-decoration: none }
+.docIndice a:hover{ text-decoration: underline; }
+.docQueList p {background:#88b0b9;color: #fff; width: 100%; text-align: center; margin-bottom: 0 }
+.rounded-circle {border-radius: 50%}
+.form-control { font-family: 'Roboto', sans-serif; }
+.docWho {border: none; border-radius: 6px;  margin-bottom: 30px;  position: relative; box-shadow: 0 6px 28px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); transition: all 0.3s cubic-bezier(.25,.8,.25,1); background: rgba(27,165,174,0.3)}
+.docWho p {line-height: normal;}
+.docWho:hover {color:#fff; background: #1badb5}
+
+.docWhere {border: none; border-radius: 6px;  margin-bottom: 30px;  position: relative; box-shadow: 0 6px 28px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); transition: all 0.3s cubic-bezier(.25,.8,.25,1);}
+.docWhere h3 { text-transform: uppercase; font-weight: 400; border-bottom: 1px solid #1badb5; padding-bottom: 5px }
+.docMas {background: #f2f2f2; text-align: right; padding: 5px 10px;}
+.docMas a {color: #545454; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; text-decoration: none}
+.docQueList ul { padding:0; list-style-type: none; float: left; width: 100%; margin: 0 0 10px 0 }
+.docQueList ul li {border-bottom: 1px solid #ddd; padding:10px 0; }
+.docWhere .mt10 { padding-top: 20px; }
+@media (min-width: 768px) {
+.infoPRODBox {padding: inherit; margin-top: 0}
+.medInfoTopSml img {width: 100%}
+.docStars { border-bottom: none; margin: 0; text-align: left; padding-bottom: 0}
+.docIndice {border-bottom: none;}
+.docIndice {border-left: 1px dashed #ddd; }
+.docQueList strong, .docQueList b {text-transform: uppercase;}
+.docQueList ul {margin-bottom: 20px; float: left; width: 100%; border-left: 1px dashed #ddd; padding-left: 10px  }
+.docQueList ul li {border-bottom: none; padding:10px 0; }
+}
+
+/*MEDICAMENTOS Y PRODUCTOS CAJA DONDE PRECIOS DESDE + COMPARA*/
+.newPriceBox-btn, .newPriceBox-btn:visited { background-color: #EB6379; border-color: #E3536C; color: #fff; margin: 0px auto; padding: 8px 5px; font-weight: 700; }
+.newPriceBox-btn:hover{ background-color: #FF8399; border-color: #FF8399;}
+.newPriceMed { font-size: 30px; letter-spacing: 2px; font-weight: 700; color: #f58b01; line-height: normal}
+.newPriceBox p {line-height: normal;}
+
+/* ::::::::::::::::::::::::::::::::::::: SEARCH Precios ::::::::::::::::::::::: */
+#affixbuscador.affix .hpBuscador {padding:8px 0;}
+#affixbuscador.affix .queB {font-size: 18px}
+#affixbuscador.affix .hpBuscador input {height: 37px}
+#affixbuscador.affix .hpBuscador .btn-buscar { padding: 5px 15px; width: 100%; }
+
+/* LISTADO FARMACIAS y LABS  ------------------------------------------------------- */
+.QFlist {margin: 10px auto; border: 1px dotted #ccc; padding: 0; width: 95%;   box-shadow: 0 1px 3px rgba(0,0,0,0.30), 0 4px 10px rgba(0,0,0,0.22) }
+.QFlist:hover { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+.QFlist h2 { font-size: 14px; text-align: center; padding: 0; margin: 10px auto; color: #4c5166 }
+.QFlist h2 a { color: #7c8196 }
+.QFlistImg {margin: 14px auto; text-align: center;}
+.QFlistImg img { max-height: 80px; max-width: 100%; margin: 0 auto; text-align: center;}
+.btn-buscar { background-color: orange; border-color: orange; color: #ffffff; }
+.btn-ver { background-color: #f58b01; border-color: #f58b01; color: #ffffff; border-radius: 0; }
+
+/************NUESTO ESTILO RESULTADOS PRECIOS **************/
+.QFpList { background: #f5f5f0 none repeat scroll 0 0; float: left; margin: 5px 0 5px 0; padding-right: 0; padding-left: 0; -webkit-box-shadow: 0 8px 6px -6px #999; -moz-box-shadow: 0 8px 6px -6px #999; box-shadow: 0 8px 6px -6px #999; border: 1px solid #ebebeb;}
+.QFpProd { float: left; margin:0 5px 5px 0;}
+.QFpProd img { width: 60px; padding: 0 }
+.QFpLogo { float: left; clear: both; margin:5px; }
+.QFpLogo img { width: 55px; margin:0; padding: 0 }
+.QFpTit p { font-size: 14px; line-height: 14px; margin: 5px; color: #333; }
+.QFpPrice {float: right; clear: none; margin:0; padding: 0; background: #1badb5; color: #fff; font-weight: 700; }
+.QFpPrice p {margin: 0 6px 0 2px ;text-align: right; font-size: 24px; font-weight: 400}
+.btn-QFp, .btn-QFp:visited{ background-color: #E3536C; font-weight: 400; border-color: #E3536C; color: #fff; margin: 3px 5px; font-size: 20px; padding: 2px 22px }
+.btn-QFp:hover , .btn-QFp:focus{ background-color: #f58b01; border-color: #f58b01; color: #fff; }
+@media (min-width: 768px) and (max-width: 994px){ 
+.QFpProd { float: left; margin: 0 5px 0 0 ; padding: 0}
+.QFpProd img { width: 60px; margin:0; padding: 0 }
+.QFpLogo { float: right; margin:5px; clear: none; }
+.QFpLogo img { width: 60px; margin:0; padding: 0 }
+}
+@media (min-width: 994px){ 
+.QFpProd { float: left; margin: 0 5px 0 0 ; padding: 0}
+.QFpProd img { width: 80px; max-height: 40px; margin:0; padding: 0 }
+.QFpLogo { float: right; margin:5px; clear: none; }
+.QFpLogo img { width: 90px; margin:0; padding: 0 }
+ }
+.analogo { width: 100%; text-align: center; height: 53px; overflow: hidden; }
+.analogo img{ max-width: 100%; max-height: 53px;}
+.analtit { text-align: center; font-size: 16px; font-weight: 700 }
+.analtit p { text-align: center; font-size: 16px; font-weight: 400; text-transform: uppercase; line-height: 19px; float: left; width: 94%; margin: 0 3% 4px 3%; height: 40px; }
+.analtit a { color: #444; }
+
+
+/********GO FARMA********/
+.gof { margin: 0 auto; text-align: center; text-transform: uppercase; font-size: 13px; color: #000e3a; line-height: normal; font-weight: 400; letter-spacing: normal; padding-bottom: 3px}
+.gofBg {width: 100%; background: #8cc5f3}
+.promoList { background: #fff; box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5) !important; float: left; margin: 5px 0 5px 0; padding-right: 0; padding-left: 0}
+.promoList:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5) !important}
+.promoProd { float: left; margin:0 5px 5px 0; }
+.promoProd img { width: 60px; padding: 0; margin: 0 !important }
+.promoLogo { float: left; clear: both; margin:5px; }
+.promoLogo img { width: 55px; margin: 0; padding: 0 }
+.promoPrice {float: right; clear: none; margin:0; padding: 0; background: #005e8a; color: #fff }
+.promoPrice:hover { background: #0597a4 }
+.promoPrice p {margin: 8px 6px 0 2px; text-align: right; font-size: 24px; }
+.promoTit p {color: #002e5a; font-weight: 700; text-transform: uppercase;}
+.btn-promo, .btn-promo:visited{ background-color: #00cb45; border-color: #00cb45; color: #fff; margin: 3px 5px; font-size: 20px; padding: 2px 22px }
+.btn-promo:hover , .btn-promo:focus{ background-color: #05e351; border-color: #05e351; color: #fff; }
+@media (min-width: 768px) and (max-width: 994px){
+.promoProd { float: left; margin: 0 5px 0 0 ; padding: 0}
+.promoProd img { width: 80px; max-height: 40px; margin:10px 0 !important; padding: 0 }
+.promoLogo { float: right; margin:5px; clear: none; }
+.promoLogo img { width: 60px; margin:0; padding: 0 }
+.promoTit {  float: left; clear: none; width: auto;  }
+.promoPrice {float: right; clear: none; color: white; padding: 0; font-size: 25px; line-height: 24px}
+.btn-promo, .btn-promo:visited{ margin: 10px 5px; font-size: 22px; padding: 4px 20px; }
+.promoTit p {font-size: 15px; margin: 5px;}
+}
+@media (min-width: 994px){
+.promoProd { float: left; margin: 0 5px 0 0 ; padding: 0}
+.promoProd img { width: 80px; max-height: 40px; margin:10px 0 !important; padding: 0 }
+.promoLogo { float: right; margin:5px; clear: none; }
+.promoLogo img { width: 90px; margin:0; padding: 0 }
+.promopPrice {float: right; clear: none; margin:0; padding: 0; background: #E3536C; color: #fff; font-weight: 700; }
+.promoPrice p {margin: 10px 15px;text-align: right; font-size: 32px; font-weight: 400}
+.btn-promo, .btn-promo:visited{ margin: 10px 5px; font-size: 22px; padding: 4px 20px; }
+.promoTit p {font-size: 19px; margin: 5px;}
+}
+.icBox2 {padding: 0 4px 0 0}
+.icBox2 a {background: #02a4af; color: #fff; display: block; border-radius: 4px; min-height: auto; padding: 5px 8px; 
+  margin:3px 0;}
+.icBox2 a:hover {background: #02818a; color: #fff;}
+.icBox2 p {font-size: 12px; line-height: 14px; margin: 5px auto; text-align: left;}
+.icBox2 img {margin: 2px 7px 5px 0px; width: 20px; float: left;}
+.icBox3 {padding: 0 4px 0 0}
+.icBox3 a {background: #ee6400; color: #fff; display: block; border-radius: 4px; min-height: auto; padding: 5px 8px; 
+  margin:3px 0;}
+.icBox3 a:hover {background: #cb5703; color: #fff;}
+.icBox3 p {font-size: 12px; line-height: 14px; margin: 5px auto; text-align: left;}
+.icBox3 img {margin: 2px 7px 5px 0px; width: 20px; float: left;}
+.icoBoxtit {margin-bottom: 0; margin-top: 10px; font-size: 17px; font-weight: 700}
+@media (min-width: 768px) {
+.icBox2 {padding: 6px}
+.icBox2 a { display: block; border-radius: 4px; padding: 5px; margin:3px 0;}
+.icBox2 p {font-size: 15px; line-height: 18px; text-align: left;}
+.icBox2 img {margin: 5px 10px 5px 7px; width: 20px; float: left;}
+.icBox3 {padding: 6px}
+.icBox3 a { display: block; border-radius: 4px; padding: 5px; margin:3px 0;}
+.icBox3 p {font-size: 15px; line-height: 18px; text-align: left;}
+.icBox3 img {margin: 5px 10px 5px 7px; width: 20px; float: left;}
+}
+
+/*********NUEVO LISTADO MEDICAMENTOS y LISTADO PRODUCTOS ACCORDEON**************/
+.elenco {padding: 0;margin: 0;}
+.elenco li {list-style: none;}
+.panel-heading.Tlistmed {background-color: #b6c0ce;color: #fff;cursor: pointer;padding: 8px;width: 100%;text-align: left;border: none;border-bottom-width: medium;border-bottom-style: none;border-bottom-color: currentcolor;outline: none;transition: 0.4s;font-size: 18px;text-transform: uppercase;border-bottom: 2px solid #b6c0ce;}
+.panel-heading.Tlistmed:hover { background-color: #1badb5; border-bottom: 2px solid #1badb5;}
+.Tlistmed a, .Tlistmed a:visited{ color:#fff; }
+.Tlistmed a:hover, .Tlistmed a:focus{ color:#fff; text-decoration: none }
+.accoList{ margin: 0; padding: 0}
+.accoList li { margin: 5px; display: inline-block; font-size: 16px; }
+.accoList li a,.accoList li a:visited {color: #1badb5}
+.accoList li a:hover{color: #ec8d41} 
+@media (max-width: 599px){ 
+.accoList li { width: 100%; margin: 5px; display: inline-block; font-size: 16px; }
+}
+@media (min-width: 600px) and (max-width: 991px) { 
+.accoList li { width: 47%; }
+} 
+@media (min-width: 992px){ 
+.accoList li { width: 31%; }
+}
+
+p.lhn {line-height: normal; margin: 10px 0; display: inline-block;}
+a.lm-leeguia {color: #5d5b6d}
+a.lm-leeguia:hover {color: #1badb5}
+.buscamedic { padding: 10px; margin-bottom: 30px; border-radius: 6px; }
+.buscamedic h3 { font-size: 23px; font-weight: 400}
+.buscamedic b {color: #fff}
+/*********NUEVO LISTADO PADECIMIENTOS y SINTOMAS**************/
+.sintomasIntro p { margin: 20px 0; line-height: normal; text-align: center; }
+p.letter_index {font-weight: 700; font-size: 60px; color: #1badb5; padding: 10px 0;}
+.sintoma_elemento_listado a, .sintoma_elemento_listado a:visited, .analisis_elemento_listado a, .analisis_elemento_listado a:visited { color: #454a5f; font-size: 18px; padding: 10px 0; display: block; width: 100%;margin: 0; }
+.sintoma_elemento_listado a:hover, .sintoma_elemento_listado a:focus, .analisis_elemento_listado a:hover, .analisis_elemento_listado a:focus { color: #1badb5; }
+/*********ENFERMEDADES RELACIONADAS**************/
+.txtReInline { width: 100%; display: table; margin: 0 auto; background: #fff }
+.txtReInline p {margin-bottom: 5px; font-weight: 400; margin-top: 10px; color: #54596b; text-transform: uppercase; letter-spacing: 2px;}
+ul.horizontal-list { min-width: 100%; list-style: none; padding: 0; text-align: center;}
+ul.horizontal-list li { display: inline-flex; margin: 0 5px}
+ul.horizontal-list a{ padding: 10px; color: #fff; text-decoration: none; background: #b6c0ce; border: 1px solid #b6c0ce; border-radius: 3px; }
+ul.horizontal-list a:hover{ color: #fff; background: #eeb510; border:1px solid #eeb510; }
+ul#horizontal-list { min-width: 100%; list-style: none; padding: 0; text-align: center;}
+ul#horizontal-list li { display: inline-flex; margin: 0 5px}
+ul#horizontal-list a{ padding: 10px; color: #fff; text-decoration: none; background: #b6c0ce; border: 1px solid #b6c0ce; border-radius: 3px; }
+ul#horizontal-list a:hover{ color: #fff; background: #eeb510; border:1px solid #eeb510; }
+ul.horizontal-list-out { min-width: 100%; list-style: none; padding: 0; text-align: center;}
+ul.horizontal-list-out li { display: inline-flex; margin: 0 5px}
+ul.horizontal-list-out a{ padding: 10px; color: #eeb510; text-decoration: none; background: #fff; border: 2px solid #eeb510; border-radius: 3px; }
+ul.horizontal-list-out a:hover{ color: #fff; background: #eeb510; border:2px solid #eeb510; }
+ul#horizontal-list-out { min-width: 100%; list-style: none; padding: 0; text-align: center;}
+ul#horizontal-list-out li { display: inline-flex; margin: 0 5px}
+ul#horizontal-list-out a{ padding: 10px; color: #fff; text-decoration: none; background: #b6c0ce; border: 2px solid #b6c0ce; border-radius: 3px; }
+ul#horizontal-list-out a:hover{ color: #fff; background: #eeb510; border:2px solid #eeb510; }
+
+/*********AVERIGUAR**************/
+.precioMbig {font-size: 30px; letter-spacing: 2px; font-weight: 700; color:#f58b01 }
+.btn-subProd {background-color: #FDB45C;border-color: #FDB45C;color: #fff;margin: 10px auto;font-size: 16px }
+.btn-subProd.focus, .btn-subProd:focus {background-color: #02a4af;border-color: #02a4af;color: #fff;}
+.btn-subProd:visited { background-color: #FDB45C;border-color: #FDB45C;color: #fff;}
+.btn-subProd:hover {background-color: #02a4af;border-color: #02a4af;color: #fff;}
+.btn-subProd.active, .btn-subProd:active, .open > .dropdown-toggle.btn-subProd {background-color: #FDB45C;border-color: #FDB45C;color: #fff;}
+
+.btn-dondeC {background-color: #EB6379;border-color: #E3536C;color: #fff;margin: 10px auto;}
+.btn-dondeC.focus, .btn-dondeC:focus {background-color: #E3536C;border-color: #EB6379;color: #fff;}
+.btn-dondeC:visited { background-color: #E3536C;border-color: #EB6379;color: #fff;}
+.btn-dondeC:hover {background-color: #E3536C;border-color: #EB6379;color: #fff;}
+.btn-dondeC.active, .btn-dondeC:active, .open > .dropdown-toggle.btn-dondeC {background-color: #E3536C;border-color: #EB6379;color: #fff;}
+
+/*:::::::::::::::::::::::::::::::::::::::: TE PODRIA INTERESAR OTRAS FARMACIAS ::::::::::::::::::::::::::::::::::::::::*/
+.relFarma { margin: 10px 0 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); transition: all 0.3s cubic-bezier(.25,.8,.25,1); }
+.relFarma:hover { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
+.relFarmain {}
+.relF {text-align: center; height: 60px;width: 100%; overflow: hidden; border-radius: 4px;  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+.relF a img{ max-width: 100%; max-height: 50px; margin: 5px auto; text-align: center;}
+.longText a {color: #fff; text-decoration: underline;}
+/* Esto es de las rew ------------------------------------------------------- */
+.porcentBox p { margin: 0}
+.revv h3 { line-height: 18px}
+.h10 { margin: 10px auto}
+.labRecomend p, .labEvalua p {font-size: 16px; line-height: 18px;}
+.ratcent {font-size: 30px !important}
+.form-check-label { padding-right: 15px; }
+.brdR {border-right: 1px solid #ddd}
+.yellow {color: #FDB45C}
+.rosa {color: #ff5a5e}
+.blu {color: #36a2eb}
+.green {color: #50b32d}
+.ratcent { color: #ddd !important}
+.starss {font-size: 25px; color: #ddd}
+.opinaa p {color: #686868}
+.edadP {font-size: 80px; font-weight: 700; margin-bottom: 0; }
+
+/*RESULTADOS EN PAGINA DE MEDICAMENTOS-----------------------------*/
+.priceINmed { background: #dee8e6; padding: 15px; border: 1px solid #c1d3d0; border-radius: 4px}
+
+/*****:::::::::::::::::::::::::::CONTACT FORM:::::::::::::::::::::::::******/
+.wpcf7-form-control {display: block;width: 100%;height: 34px;padding: 6px 12px;font-size: 14px;line-height: 1.42857143;color: #555;background-color: #fff;background-image: none;border: 1px solid #ccc;border-radius: 4px;-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);box-shadow: inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;}
+textarea.wpcf7-form-control { height: auto; }
+.wpcf7-submit { background-color: #02a4af; border-color: #02a4af; color: #fff; margin: 10px auto; font-size: 18px; width: auto; line-height: normal; }
+.wpcf7-submit.focus, .wpcf7-submit:focus { background-color: #1badb5; border-color: #1badb5; color: #fff; }
+.wpcf7-submit:visited { background-color: #02a4af; border-color: #02a4af; color: #fff; }
+.wpcf7-submit:hover { background-color: #1badb5; border-color: #1badb5; color: #fff; }
+.wpcf7-submit.active, .wpcf7-submit:active{ background-color: #1badb5; border-color: #1badb5; color: #fff; }
+.wpcf7-form-control.g-recaptcha.wpcf7-recaptcha { height: auto !important; border: none !important; width: auto !important; box-shadow: none !important; }
+
+/*****:::::::::::::::::::::::::::FIN ESTILOS ENCUESTA MEDICAMENTO:::::::::::::::::::::::::******/
+.affix { top: 0; z-index: 999; width: 100% }
+.ii-icons h3 {margin: 0 auto; padding: 0}
+.ii-icons a:hover {color: #1badb5}
+.ii-icons a img{opacity:0.7}
+.ii-icons a:hover img{opacity:1}
+
+/************ PORTADA **************/
+.hpList {margin: 0; padding: 0}
+.hpList h2{ font-size: 24px}
+.hpList h4{ font-size: 16px}
+.hpList2 { margin: 0 auto; padding: 10px 0 !important; }
+.cronicPDFin {border:1px solid #ddd; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); border-radius: 0 10px 10px 0; height: 300px; line-height: normal; text-align: left; padding:  30px 20px 20px 20px; overflow: hidden; margin: 20px 0   }
+.cronicPDFin:hover { box-shadow: 0 14px 28px rgba(143,190,0,0.25), 0 10px 10px rgba(143,190,0,0.22);}
+.cronicPDFin { background: url("images/segnalino.png") no-repeat 98% 0; background-size: 34px; border-left: 5px solid #8FBE00; }
+.cronicPDFin span { display: inline-block; vertical-align: middle; line-height: normal; height: 210px; overflow: hidden; }
+.cronicPDFin h4 { line-height: normal; font-weight: 700; color: #000 }
+.cronicPDFin p { line-height: 23px; font-size: 14px }
+.cronicPDFin a { color: #454a5f }
+.cronicNLbox {background:#8fbe00; padding:10px; border-radius: 4px; color: #fff; margin-bottom: 30px}
+.cronicNLbox h4 { text-align: center; text-transform: uppercase; letter-spacing: 3px; font-size: 20px; color:#fff; font-weight: 400 }
+.cronicNLbox label {color: #fff}
+.cronicNLbox a {color: #fff}
+#cronicas-email-form h4 { margin: 5px auto 0 auto; }
+/*.hpFarmaList img {margin:5px; opacity: 0.7}
+.hpFarmaList img:hover {opacity: 1}
+.hp-remed{margin: 30px 0}
+.hp-remed li{ list-style-type: none; font-size: 18px; letter-spacing: 0.09em; padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px dashed #eae8e6 }
+.hp-remed li a {color: #888}
+.hp-remed li a:hover {color: #f58b01}
+.panel-hpico {border-color: #ddd; background-color: #fff; border-radius: 20px}
+.panel-hpico a {color: #666; text-align: center;}
+.panel-hpico:hover, .panel-hpico a:hover {border-color: #f58b01; background-color: #fff; color: #f58b01 !important}
+.panel-hpico img { width: 70%; padding:10px; margin: 0 auto; }
+.panel-hpico h3 {font-size: 16px}
+.panel-QF {border-color: #ddd; background-color: #E3536C;}
+.panel-QFbody {padding:5px; background-color: white}
+.panel-QFfooter { padding: 5px; color: #fff}
+.panel-QF a {color: #fff; text-align: center;}
+.panel-QF:hover {border-color: #FDB45C; background-color: #FDB45C; }
+*/
+.bigTxt {font-size: 28px !important; margin-bottom: 20px;}
+
+@media (min-width: 700px) { 
+.bigTxt {font-size: 34px !important; margin-bottom: 20px;}
+.hpList h2{ font-size: 29px}
+.precioMbig {font-size: 40px; letter-spacing: 2px; font-weight: 700; color:#f58b01 }
+.QFpPrice p { color: white; margin:0 26px 0; padding: 0; font-size: 25px}
+}
+/* ANALISIS ------------------------------------------------------- */
+.ctaAnalis {margin: 20px 0; border: 1px dashed #ccc; background: #f2f2f2}
+.ctaAnalis p {font-size: 18px; line-height: 22px; margin: 5px 0}
+.ctaAnalis .btn {margin: 10px 0 }
+.ctaLab {margin: 20px 0; border: 1px dashed #ccc; background: #f2f2f2}
+.ctaLab p {font-size: 18px; line-height: 22px; margin: 15px 0}
+.ctaLab .btn {margin: 10px 0 }
+.infoPM {margin-bottom: 20px; float: left; width: 100%;}
+
+@media screen and (max-width: 767px) /* Mobile */ { 
+.logoXs{ height:50px }
+.navbar { min-height: 40px; margin-bottom: 0; }
+.navbar-toggle { padding: 10px 10px; margin-top: 5px; margin-bottom: 5px; background: #8fbe00; margin-right:0; }
+.icon-bar{background: #fff}
+h1, .h1 { font-size: 30px; }
+h2, .h2 { font-size: 22px; }
+h3, .h3 { font-size: 18px; }
+.page-header { padding: 5px 0; margin: 0 auto 5px !important; border-bottom: 1px solid #eee; }
+#content { padding: 5px 0 0; margin-bottom:90px; }
+.ii-btn { margin:5px auto}
+.web, .phone, .i-info p {text-align: center; margin: 0; line-height: normal;}
+.navbar .navbar-collapse, .navbar .navbar-form {width: 100%; margin: 0}
+.btn-pedir {width: 90%}
+.listResFarma{ border: 1px solid #ccc}
+.listResFarmaR{text-align: center}
+.listResFarmaR h3 { margin: 10px 0; font-size: 22px !important; word-break: normal; }
+.btn-pedir { float: right !important; top: 0 !important; right: 20px !important; position: absolute;}
+.tcXs {text-align: center}
+.brdR {border-right:none; border-bottom:1px solid #ddd; margin-bottom: 20px; float: left}
+.btn-comparaMed { font-size: 16px !important; padding: 4px; margin: 0 auto; }
+h1, .h1 { margin: 0 auto;}
+#side-nav { border-right: none }
+ol.navProd{ width:100%; margin: 0; padding-bottom: 20px; } 
+.prodBox { border: 0 }
+.prodBox h2 { text-align: left; margin: 0 0 10px 0; }
+p { line-height: 24px; }
+p.lhn {line-height: normal; display: inline-block;}
+.prodTop { margin: 10px 0; }
+.ii-icons h3 { margin: 0 auto 8px;padding: 0;}
+.usuarioDo {  margin: 0 -15px; padding: 0; float: left; }
+.usuarioDo p { float: left; clear: none; font-size: 14px; margin: 0 4px 10px; }
+.prodBox {margin-bottom: 0;}
+/*.medStar { font-size: 24px; color: #f58b01 !important; text-align: center; }*/
+.alert-warning {margin: 0}
+.well-price {padding: 5px; margin: 15px 0 10px 0}
+.well-price p {line-height: 26px}
+.bigPrice { margin-top: 0; }
+.usuarioDo a, .usuarioDo a:visited{ color: black; }
+.usuarioDo a:hover, .usuarioDo a:focus{ color: orange; }
+.hpBuscador{padding: 7px 0}
+.hpBuscador input {height: 37px}
+.hpBuscador .btn-buscar { padding: 5px 15px; width: 100%; }
+}
+
+.affix .hpMedicamentos input { font-size: 14px; padding: 8px 10px; height: auto; }
+.affix .hpMedicamentos .btn { padding: 5px;}
+
+@media (max-width: 768px) {
+}
+
+.docWhereSml {margin-bottom: 15px} .docWhereSml p { line-height: normal; }
+.HospLogo {width: 200px}
+.HospLogo img {width: 200px}
+.docExper hr { border: none; border-bottom: 1px dashed #ddd; margin: 40px 0;} 
+.qf-group {margin: 30px 0; padding-left:0;}
+.qf-group-item:first-child { border-top-right-radius: none; border-top-left-radius: none; border-top: none }
+.qf-group-item { position: relative; display: block; padding: 10px 15px; margin-bottom: -1px; background-color: #fff; border: 1px solid #ddd;border-bottom: 1px solid #ddd; border-top: none  }
+.mt20b30 {margin: 20px 0 30px 0}
+.mt10 {margin-top: 10px}
+.hospSml {margin-bottom: 25px; padding: 0 0 20px 0}
+.hospSml p { line-height: normal }
+.well-hosp p { line-height: normal; }
+a .well-hosp {color: #454a5f}
+a .well-hosp:hover {color: #1badb5}
+.Hwww {margin-bottom: 20px}
+.docTop p { line-height: normal; margin: 20px 0; }
+.docTop img { margin: 10px 0; }
+.QFlistSuc { margin: 10px auto; width: 100%; box-shadow: 0 1px 3px rgba(0,0,0,0.30), 0 4px 10px rgba(0,0,0,0.22); padding:3px 0;}
+.QFlistSuc h4 {font-weight: 400; font-size: 16px; color: #1badb5; padding: 10px; margin: 5px 0 0 0}
+.QFlistSuc p {color: #737373; line-height: 25px; padding: 1px 10px; letter-spacing: 0.5px; font-size: 15px}
+p.direcciÃ³n { font-size: 16px; background:  #eaeaea; padding: 4px 13px; border-top: 1px dashed #d2d2d2; border-bottom: 1px dashed #d2d2d2; color: #434343 }
+.QFlistSuc table { border-color: white; border-collapse: inherit; border-top: 1px solid #ddd}
+.QFlistSuc td { padding: 10px 3px; background: white;  text-align: left; }
+.QFlistSuc td:nth-child(even) { background: #ddd;  }
+.grisBGli {background: #eeeeee}
+.SUCFilter { font-family: 'Raleway', Arial, sans-serif; text-align: center; text-transform: uppercase; font-weight: 500; letter-spacing: 1px;  }
+ul.SUCFilter {padding: 0;}
+.SUCFilterBox { float: left; margin: 20px 0;}
+.SUCFilter * { -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.35s ease; transition: all 0.35s ease; }
+.SUCFilter li { display: inline-block; list-style: outside none none; margin: 2px; font-size: 14px; padding: 0; margin: 3px}
+.SUCFilter a { padding: 0.3em 0; color: rgba(96, 100, 117, 0.8);  padding: 4px; position: relative; text-decoration: none; display: inline-block; }
+.SUCFilter a:before, .SUCFilter a:after { height: 3px; position: absolute; content: ''; -webkit-transition: all 0.35s ease; transition: all 0.35s ease; background-color: #1badb5; width: 0; }
+.SUCFilter a:before { top: 0; left: 0; }
+.SUCFilter a:after { bottom: 0; right: 0; }
+.SUCFilter a:hover, .SUCFilter .current a { color: #1badb5; }
+.SUCFilter a:hover:before, .SUCFilter .current a:before, .SUCFilter a:hover:after, .SUCFilter .current a:after { width: 100%; background:  #1badb5;   }
+
+
+/*MODAL*/
+[role="button"] { cursor: pointer;}
+.modal-open { overflow: hidden; }
+.modal { display: none; overflow: hidden; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1050; -webkit-overflow-scrolling: touch; outline: 0; }
+.modal.fade .modal-dialog { -webkit-transform: translate(0, -25%); -ms-transform: translate(0, -25%); -o-transform: translate(0, -25%); transform: translate(0, -25%); -webkit-transition: -webkit-transform 0.3s ease-out; -o-transition: -o-transform 0.3s ease-out; transition: transform 0.3s ease-out;}
+.modal.in .modal-dialog { -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); z-index: 989 }
+.modal-open .modal { overflow-x: hidden; overflow-y: auto; }
+.modal-dialog { position: relative; width: auto; margin: 10px; }
+.modal-content { position: relative; background-color: #ffffff; border: 1px solid #999999; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 6px; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); -webkit-background-clip: padding-box; background-clip: padding-box; outline: 0; }
+.modal-content {padding: 20px}
+.modal-body {padding: 20px 0 0 0}.modal-backdrop { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1040; background-color: #1badb5;}
+.modal-backdrop.fade { opacity: 0; filter: alpha(opacity=0); }
+.modal-backdrop.in { opacity: 0.8; filter: alpha(opacity=100); z-index: 988 }
+.modal-header { padding: 15px; border-bottom: 1px solid #e5e5e5; min-height: 16.42857143px;}
+.modal-header .close { margin-top: -2px; }
+.modal-title { margin: 0 auto 10px auto; line-height: 1.42857143; font-weight: 700; color: #1badb5; font-size: 20px;border-bottom: 1px solid #ddd;padding-bottom: 10px; }
+.modal-body { position: relative; padding: 15px; }
+.modal-body a, .modal-body a:visited{ color: #454a5f}
+.modal-body a:hover, .modal-body a:focus{ color: #1badb5}
+ul.modal-body li { color:  #8fbe00; list-style-type: none;}
+ul.modal-body {padding: 0; margin: 0 3%; list-style-type: none;}
+ul.modal-body li::first-letter {color:  #1badb5; font-weight: 700}
+.close { float: right; font-weight: 700; position: absolute; right: 20px; top: 15px; font-size: 30px; opacity: 1; color: #888; }
+button.close { -webkit-appearance: none; padding: 0; cursor: pointer; background: transparent; border: 0; }
+.close:hover, .close:focus { color: #000; text-decoration: none; cursor: pointer; filter: alpha(opacity=50); opacity: .5; }
+@media (min-width: 768px) {
+.QFlistSuc table {border-top: 1px solid #ddd;}
+.QFlistSuc td { padding: 10px 3px; background: white; text-align: center;  }
+.QFlistSuc td:nth-child(even) { border-right: 1px solid #ddd; border-left: 1px solid #ddd; background: white; }
+.modal-dialog { width: 600px; margin: 30px auto; }
+.modal-content { -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+}
+@media (min-width: 768px) {
+.navbar-brand > img {max-width: 193px}
+}
+.progress-bar strong, th strong {color: #fff}
+
+#search_button img { width: 33px; }
+#search_button { padding-top: 5px; padding-bottom: 5px; }
+
+.star { background: url(https://quefarmacia.com/wp-content/themes/quefarmacia-child/images/star_on.svg); height: 30px; width: 30px; display: inline-block; }
+.star-no { background: url(https://quefarmacia.com/wp-content/themes/quefarmacia-child/images/star_off.svg); height: 30px; width: 30px; display: inline-block; }
+.star-half { background: url(https://quefarmacia.com/wp-content/themes/quefarmacia-child/images/star_half.svg); height: 30px; width: 30px; display: inline-block; }
+
+.listComm .star, .listComm .star-half, .listComm .star-no {width: 25px; height: 25px} 
+img { max-width: 100%; height: auto; }
+
+.oneColist, .twoColist, .threeColist { margin: 0; float: left; width: 100% }
+.oneColist ul, .twoColist ul, .threeColist ul {   margin: 0; padding: 0 }
+.oneColist li, .twoColist li, .threeColist li {    float: left;   }
+.oneColist li {width: 100%}
+.twoColist li {width: 100%}
+.threeColist li {width: 100%}
+.oneColist li img, .twoColist li img, .threeColist li img { vertical-align: text-top; }
+.fourColist ul, .fiveColist ul {padding: 0}
+.fourColist li, .fiveColist li{ float: left; width: 100%; list-style-type: none;}
+.fourColist li, .fiveColist li {width: 100%}
+@media (min-width: 768px) {
+.oneColist li { float: left; width: 92%; margin: 7px 4%; }
+.twoColist li { float: left; width: 46%; margin: 7px 2%; }
+.threeColist li {width: 31%; margin: 0 1%;}
+.fourColist li {width: 25%}
+.fiveColist li {width: 12%;}
+}
+
+.sucMasBuscadasLi {margin-bottom: 50px}
+.sucMasBuscadasLi li a, .sucMasBuscadasLi a:visited {color: rgba(96, 100, 117, 0.8);}
+.sucMasBuscadasLi li a:hover, .sucMasBuscadasLi a:focus {color: #1badb5}
+.buscaSuc {padding: 10px 0; border-radius:5px;}
+.buscaSuc label {color: #fff}
+.buscaSucBan {padding:10px 0;border-radius: 4px; border-top: 1px dashed #8fbe00; border-bottom:1px dashed #8fbe00;}
+.buscaSucBan p {font-size: 30px; margin-bottom: 0; line-height:normal;}
+@media (max-width: 767px) {
+.buscaSucBan p {font-size: 20px; margin-bottom: 0; line-height:normal;}
+}
+
+
+.btn-elem { list-style: outside none none; text-align: center; background:  #F5F5F5; padding: 10px; cursor: pointer;    transition: visibility 0s, opacity 0.5s linear;
+border: 1px solid #dee2e6; border-radius: 4px 4px 0 0; text-transform: uppercase; font-weight: bold; letter-spacing: 0.06rem; }
+.btn-elem:hover, .btn-suc:focus { background: #20c3df; color: #fff; box-shadow: none }
+.listado-elem { margin: 5px auto; }
+.listado-elem-acc {   transition: visibility 0s, opacity 0.5s linear; border: 1px solid #dee2e6; position: relative; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; min-width: 0; word-wrap: break-word; background-color:  #fff; padding: 10px; background-clip: border-box; border-radius: 0 0 .25rem .25rem; }
+/*.lc_suc_box ul li::first-letter { color:  #1badb5; font-weight: 700; }*/
+.listado-elem-acc ul { padding: 0; text-align: left;}
+.listado-elem-acc ul li {list-style-type: none;}
+.listado-elem-acc ul li a {color: #747888}
+
+
+  h1 {text-align: center;}
+.ficha_producto-B img { width: 110px; }
+.ficha_producto-B img { width: 110px; }
+.ficha_producto-B p { line-height: 26px }
+.ficha_producto-B .price { font-weight: bold; font-size: 30px; }
+.ficha_producto-B small { font-weight: bold; letter-spacing: 2px; line-height: normal; }
+.stars img { width: 25px; }
+.dashed { border-top:1px dashed #CFD8DC; }
+.mb-0 {margin-bottom: 0}
+.shadow {box-shadow:0 .5rem 1rem rgba(0,0,0,.15) !important}
+.my-10 {margin:10px 0;}
+.ficha_producto-B .stars {text-align: center;}
+.ficha_producto-B .stars .star, .ficha_producto-B .stars .star-no, .ficha_producto-B .stars .star-half {width: 25px; height: 25px}
+
+@media (min-width: 768px) {
+h1 {text-align: left;}
+.ficha_producto-Bprod img { width: 100%; }
+.ficha_producto-B .stars { text-align: left; }
+.ficha_producto-B .stars .star, .ficha_producto-B .stars .star-no, .ficha_producto-B .stars .star-half {text-align: left; width: 30px; height: 30px}
+}
+
+.lhn { line-height: normal; }
+.docWho p {margin-bottom: 0}
+hr.dashed { margin: 10px auto; }
+
+.canitas img {max-width: 100%; height: auto}
+.capit { text-transform: capitalize; }
+
+.Ddoc { background: #f1f1f1; padding: 10px 0; border: 1px solid #1badb5 }
+h1.titBig { text-transform: uppercase; font-weight: 400; border-bottom: 1px solid #1badb5; padding-bottom: 5px; margin-bottom: 5px }
+p.Dspec {font-size: 20px; color:  #1badb5;
+line-height: normal;
+margin: 10px auto;}
+.grisP, a.grisP, .grisP a {color: #5c6176}
+.tdu { text-decoration: underline; }
+.Ddoc p { line-height: normal; }
+.docResult p { line-height: normal; margin: 5px auto }
+.Doclistado h2 {margin-top: 45px}
+ .xlm { font-size: 20px; color: #7d7b8d; margin-bottom: 20px; text-align: center; line-height: normal; }
+.Ddoc h2 { color: #f58b01 }
+.drimed h1.titBig { font-size: 23px }
+
+.docResult p { line-height: normal; margin: 5px auto }
+.Doclistado p {line-height: normal;}
+.Doclistado h2 {margin-top: 45px}
+.Dlist h2 { color: #f58b01 !important }
+
+/* COVID */
+.xl30 {font-size: 30px; line-height: normal; }
+.xl40 {font-size: 40px; line-height: normal; }
+table.normalTable { width: auto !important }
+.normalTable thead th, .normalTable tbody td { padding: 15px !important; font-size: 18px; line-height: normal; }
+.normalTable tbody td { display: table-cell; text-align: left !important; }
+.normalTable tbody td::before { content: none; display: none; margin-right: 0; float: none; color: #1badb5; font-weight: 400; }
+
+
+/* PRICES AMAZON  
+
+.QFpPriceA { background: #232f3e; } 
+.btn-QFpA, .btn-QFpA:visited { background-color: #ff9700; border-color: #ff9700 }  
+.btn-QFpA:hover,.btn-QFpA:focus { background-color: #E47911; border-color: #E47911 } 
+.AfBg { width: 100%; background: #fbd6a7; }   */
+
+/* PREGUNTA A TU DOCTOR*/
+.naranjaBG { background: #f58b01; }
+.btn-marino, .btn-marino:visited { background: #1badb5; border: #1badb5 }
+.btn-marino:focus, .btn-marino:hover { background: #008d95; border: #008d95; }
+.PreguntaList {margin-bottom: 30px}
+.PreguntaList p {color: #222; font-size: 20px}
+.PreguntaList ul {margin-bottom: 10px; padding: 0 0 0 20px; }
+.PreguntaList li { color: #5f6d7a; line-height: normal; border-bottom: 1px solid #e2e2e2; padding: 10px; min-height: 65px; list-style-type: none; }
+.PreguntaList a, .PreguntaList a:visited {color: #5f6d7a; text-decoration: none; line-height: normal;}
+.PreguntaList a:hover, .PreguntaList a:focus { color: #1badb5    }
+.PreguntaList li:before { content: ''; width: 10px; height: 10px; position: absolute; background-image: url('arrow-QF.svg'); background-size: cover; background-position: center; left: 26px;  margin-top: 5px }
+.preguntaDoc { background: #1badb5; border-radius: 4px; }
+.preguntaDoc h2 {margin: 5px auto; color: #fff }
+.preguntaDoc a, .preguntaDoc a:visited { color: #fff; text-decoration: underline; }
+.preguntaDoc a:hover, .preguntaDoc a:focus { color: #1badb5; text-decoration: underline; }
+.preguntaDoc .btn { margin: 10px auto; }
+.preguntaDoc .prgDocAcept {margin: 10px auto; }
+.imgDocXs { border-bottom: 1px dashed #cfddea; border-top: 1px dashed #cfddea }
+.imgDocXs img { margin: 5px 5px 5px 0 }
+.listPop { margin: 100px auto; }
+.listPop ul { min-width: 100%; list-style: none; padding: 0;}
+.listPop ul li { display: inline-flex; margin: 0 5px}
+.listPop ul a, .listPop ul a:visited {padding: 2px 10px; font-size: 16px; color: #7f8d9a; text-decoration: none; line-height: normal;  }
+.listPop ul  a:hover{ color: #1badb5; text-decoration: underline;}
+@media (min-width: 768px) {
+.listPop ul a, .listPop ul a:visited{ font-size:18px;padding: 5px 10px; }
+}
+
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid orange;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin .75s linear infinite;
+    /* Safari */
+    animation: spin .75s linear infinite;
+    color: #ffc107;
+    margin: 15px auto;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes spinner-border {
+  to { transform: rotate(360deg); }
+}
+
+.spinner-border {
+  display: inline-block;
+  width: $spinner-width;
+  height: $spinner-height;
+  vertical-align: text-bottom;
+    border: 8px solid orange;
+  border-right-color: transparent;
+  // stylelint-disable-next-line property-blacklist
+  border-radius: 50%;
+  animation: spinner-border .75s linear infinite;
+}
+

@@ -1,0 +1,33 @@
+
+.alert-rosa { 
+  margin: 50px 20px 60px 20px; 
+  text-align: left;  
+  transform:rotate(-1deg) 
+} 
+.bg-rosa {
+  font-size: 1.2rem; 
+  padding: 0.5rem 1rem; 
+  color: #fff; 
+  background: #5dc3da; 
+  line-height: 2.3;
+}
+
+
+.alert-amarillo { 
+  margin: 40px 20px 40px auto; 
+  text-align: right; width: 100%; 
+  transform:rotate(1deg) 
+} 
+.bg-amarillo {
+  font-size: 1.2rem; 
+  padding: 0.5rem 1rem; 
+  color: #fff; 
+  background: #abcb53; 
+  line-height: 2.3;
+}
+
+
+.alert-info { margin: 30px auto; }
+.alertSx { background: #F5D10D; padding-top: 2em; padding-bottom: 1em; }
+.alertSx h2 { color: #fff; font-size: 2.5em; line-height: 1em; padding-top: 0.5em; padding-bottom: 0.5em;  font-weight: 600; transform: rotate(-5deg); text-align: center; }
+.alertDx { font-size: 2em; padding-top: 1em; padding-bottom: 1em;  }

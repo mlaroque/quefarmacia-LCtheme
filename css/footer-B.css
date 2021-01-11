@@ -1,0 +1,160 @@
+/**FOOTER B CSS**/
+footer{
+		background: #333030; 
+		}
+footer li { 
+		list-style-type: none;
+		}
+footer li a,
+footer li a:visited { 
+		color: #ADADAD; 
+		font-size: 14px; 
+		}
+footer li a:hover,
+footer li a:focus {
+		color: #fff; 
+		text-decoration: none;
+		}
+footer hr { 
+		background: #ADADAD; 
+		}
+.footClaim {
+		color: #fff; 
+		}
+.copy p { 
+		color: #ADADAD; 
+		margin: 30px 0; 
+		font-size: 14px;
+		}
+.copy a, 
+.copy a:visited { 
+		color: #fff;
+		}
+.copy a:hover, 
+.copy a:focus { 
+		color: #fff; 
+		}
+.footHori { 
+		background: #222; 
+		}
+.footHori ul { 
+		padding: 0;
+		}
+.footHori a, 
+.footHori a:visited { 
+		color: #e0e0e0; 
+		font-size: 16px; 
+		padding: 10px 0; 
+		margin: 0 10px; 
+		}
+.footHori a:hover,
+.footHori a:focus { 
+		color: #fff; 
+		}
+.footHori li { 
+		margin:5px; 
+		display: inline;
+		}
+.foot { 
+		padding-top: 40px; 
+		padding-bottom: 30px; 
+		margin: 20px auto;
+		}
+.foot ul { 
+		padding: 0; 
+		}
+.foot li { 
+		padding: 0; 
+		margin: 0; 
+		font-size: 12px; 
+		color: #959595; 
+		font-weight: normal; 
+		line-height: normal; 
+		list-style-type: none; 
+		display: inline; 
+		width: 24%; 
+		}
+.foot li:after { 
+		content: ", "; 
+		}
+.foot li:last-child:after { 
+		content: " "; 
+		}
+.foot li a { 
+		padding: 8px 0;
+		margin:5px 0; 
+		}
+
+.foot h2, 
+.footHori h2, 
+.copy h2, 
+.footSx h2, 
+.footDx h2 { 
+		font-size: 12px; 
+		color: #fff; 
+		text-transform: uppercase; 
+		font-weight: bold; 
+		margin-top: 30px; 
+		text-align: center; 
+		}
+
+.footSx h2 { 
+		text-align: left;
+		}
+.footSx ul, .footDx ul { 
+		padding: 0; 
+		text-align: center;
+		}
+.footSx li { 
+		display: inline-flex; 
+		}
+
+.footDx h2 { 
+		text-align: right;
+		}
+.footDx li {
+		display: inline-flex;
+		}
+.footSx li a, 
+.footSx li a:visited, 
+.footDx li a, 
+.footDx li a:visited {
+		color: #ADADAD;
+		font-size: 14px; 
+		padding: 2px 0; 
+		margin:2px;
+		}
+.footSx li a:hover,
+.footSx li a:focus,
+.footDx li a:hover,
+.footDx li a:focus {
+		color: #fff;
+		text-decoration: none;
+		}
+
+@media (min-width: 768px){
+.foot li:after { 
+		content: none;
+		}
+.foot li:last-child:after { 
+		content: none; 
+		}
+.footSx ul {
+		text-align: left;
+		}
+.footDx ul {
+		text-align: right;
+		}
+.footSx li a, 
+.footSx li a:visited, 
+.footDx li a, 
+.footDx li a:visited { 
+		padding: 10px 0; 
+		margin:4px;
+		}
+
+.footHori ul li,
+.foot li {
+		display: inline-flex;
+		}
+}

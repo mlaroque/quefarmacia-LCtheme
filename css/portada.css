@@ -1,0 +1,279 @@
+.txtBig h2 { margin: 30px auto; font-size: 2.6rem; color: #444a62; }
+.txtBig p { font-size: 1.5rem; }
+
+.HPparallax { background: #192848 url(../images/hpbg.jpg); background-size: cover; background-position: center; }
+#HPparallax {
+    background-size: cover !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-attachment: fixed !important;
+    margin-bottom: 0;
+    box-shadow: inset 0px 0 300px #000;
+}
+#HPparallax h1 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+
+
+.HPparallax_mid { padding-top: 3em;
+	padding-bottom: 3em;
+    background: rgba(25, 40, 72, 0.4);
+ }
+
+.HPparallax_mid h1 {
+    color: #192848;
+    margin: 0 auto;
+}
+.HPparallax_mid p {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.4em;
+    margin: 1em auto;
+}
+
+.btn-HPparallax, .btn-HPparallax:visited {
+    border: 1px solid #0C0F66;
+    background: #0C0F66;
+    font-weight: 400;
+    color: #fff;
+}
+.btn-HPparallax:hover, .btn-HPparallax:focus { color: #fff }
+
+.lc_cta-destinos { 
+	background: #192848;
+	color: #fff;
+	margin-bottom: 2em;
+ }
+
+.lc_cta-destinos h2 { 
+	font-size: 2.3em;
+	line-height: 1em;
+	margin: 0.5em auto;
+	color: #fff;
+	text-align: center;
+	font-weight: 400;
+ }
+.lc_cta-destinos .form-group { 
+	margin: 0.8em auto 0.8em;
+}
+
+.btn-cta-destinos, .btn-cta-destinos:visited {
+font-weight: 300;
+text-decoration: none;
+font-size: 1.4em;
+padding-top: 0.4em;
+background: #bfb46a;
+color: #fff;
+line-height: 1.4em;
+width: 100%;
+text-transform: uppercase;
+}
+
+.btn-cta-destinos:hover, .btn-cta-destinos:focus {
+	text-decoration: none;
+	background: #cec487;
+	color: #fff;
+}
+
+.HPcatBox { margin-bottom: 2em; }
+.HPcatIn { background: #bfb46a; border-radius: 4px; padding-bottom: 5px; display: inline-block; }
+.HPcatImg img { width: 50%; }
+.HPcatTxt h2 {
+	color: #fff;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+.HPcatCTA { margin: 20px auto; }
+.btn-HPcatCTA {
+	margin: 0 auto;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.HPtextWP {
+	margin:70px auto;
+}
+
+.HPtextWP h2 {
+    color: #192848;
+}
+
+.HPtextWP h3 {
+    color: #bfb46a;
+}
+
+.card-content {
+	background: #dad1a4;
+	border-radius: 4px;
+	padding-bottom: 10px;
+}
+
+.card-img {
+	position: relative;
+	overflow: hidden;
+	border-radius: 0;
+	z-index: 1;
+}
+
+.card-img img {
+	width: 40%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.card-desc {
+	padding: 0 1.25rem 0 1.25rem;
+	text-align: center;
+}
+
+.card-desc h2 {
+	color: #434d6b;
+    font-weight: 400;
+    font-size: 1.3em;
+    line-height: 1em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.card-desc p {
+	color: #fff;
+	font-weight: 300;
+	font-size: 1.1em;
+	line-height: 1.5;
+	margin: 0px;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+
+.card-btn {
+	padding: 1.25rem;
+	text-align: center;
+}
+
+.btn-card, .btn-card:visited {
+	background-color: #182848;
+	color: #fff;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    padding: .84rem 2.14rem;
+    font-size: .81rem;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    margin: 0;
+    border: 0;
+    -webkit-border-radius: .125rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    color: #fff;
+}
+.btn-card:hover, .btn-card:focus {
+    background: #988f54;
+}
+a.btn-card {
+    text-decoration: none;
+    color: #fff;
+}
+
+#destinos {
+	background: #182848;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+.destinosTop h2 {
+	color: #fff;
+}
+
+.destinosTop p {
+	color: #D7D9FF;
+	margin-bottom: 40px;
+}
+.destinos { 
+    margin-bottom: 1.5em; 
+    position: relative; 
+    border-radius: 4px; 
+    border: 3px solid transparent;
+    overflow: hidden;
+}
+.destinos:hover {
+    border: 3px solid #bfb469
+}
+.destinos-img { 
+    height: 200px; 
+    position: relative; 
+    overflow: hidden; 
+}
+.destinos-img > a > img { 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.destinos a{
+    text-decoration: none;
+    color: #07171d;
+}
+
+
+.destinos-title {
+    position: absolute; 
+    bottom: 10px; 
+    left: 0; 
+    z-index: 100; 
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+
+.destinos-title p {
+    word-break: break-word; 
+    margin:0;
+    padding: 6px;
+    font-size: 1.125em;
+    line-height: 1.1em; 
+    font-weight: 300;
+    color: #182848;
+}
+
+
+
+.btn-masdestinos, .btn-masdestinos:visited { 
+	border: 1px solid #fff;
+	color: #fff;
+	margin: 1.5em auto 0 auto;
+	cursor: pointer;
+ }
+
+
+.btn-masdestinos:hover, .btn-masdestinos:focus { 
+	border: 1px solid #fff;
+	color: #182848;
+	background: #fff;
+	text-decoration: none;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+
+

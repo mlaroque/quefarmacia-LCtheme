@@ -1,0 +1,20 @@
+.halfboxBox { margin-bottom: 30px; }
+.halfbox { margin: 10px auto 30px; }
+.halfbox-in { 
+    width: 94%;
+    margin: 10px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.halfbox-in h3 {
+margin: 10px auto 20px;
+text-align: center;
+border-bottom: 1px solid #F5D10D;
+padding-bottom: 10px;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 1.5em;
+ }
+
+.halfbox-in p { color: #8d98a2; margin-bottom: 10px }
+.halfbox-in b { color: #59687f;  }  

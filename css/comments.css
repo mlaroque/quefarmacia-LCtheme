@@ -1,0 +1,105 @@
+.lc_comments {
+	color: #fff; 
+	font-size: 16px;
+	background-color: #663300;
+}
+.lc_comments h2, .lc_comments h3, .lc_comments label, .comment-notes { color: #fff; }
+.lc_comments a, .lc_comments a:visited {
+	color: #fcfcfc;
+}
+.lc_comments a:focus, .lc_comments a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.lc_input {
+	color: #7d7b8d; 
+	width:100%; 
+	font-size: 1.2em; 
+	padding: 6px 10px !important; 
+	border-color: #bdbdbd !important; 
+	border: 1px solid #ddd; 
+	border-radius: 5px
+}
+.lc_textarea { 
+	color: #7d7b8d; 
+	width:100%; 
+	font-size: 1.2em; 
+	padding: 6px 10px !important; 
+	border-color: #bdbdbd !important; 
+	height: 200px !important; 
+	border: 1px solid #ddd; 
+	border-radius: 5px;	
+	font-family: 'Montserrat', sans-serif; 
+	color: #7d7b8d; 
+	font-size: 16px;
+
+}
+.lc_group {margin: 20px author;}
+
+.lc_commentsinput[type="checkbox"]:focus, 
+.lc_commentsinput[type="color"]:focus, 
+.lc_commentsinput[type="date"]:focus, 
+.lc_commentsinput[type="datetime-local"]:focus, 
+.lc_commentsinput[type="datetime"]:focus, 
+.lc_commentsinput[type="email"]:focus, 
+.lc_commentsinput[type="month"]:focus, 
+.lc_commentsinput[type="number"]:focus, 
+.lc_commentsinput[type="password"]:focus, 
+.lc_commentsinput[type="radio"]:focus, 
+.lc_commentsinput[type="search"]:focus, 
+.lc_commentsinput[type="tel"]:focus, 
+.lc_commentsinput[type="text"]:focus, 
+.lc_commentsinput[type="time"]:focus, 
+.lc_commentsinput[type="url"]:focus, 
+.lc_commentsinput[type="week"]:focus, 
+.lc_commentsselect:focus, textarea:focus { 
+	box-shadow: 0 0.2rem 1rem rgba(84, 160, 212, 0.6); 
+}
+.lc_commentBtn { 
+	background: #54a0d4;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	margin: 10px auto;
+	border: 1px solid #54a0d4;
+	border-radius: 5px;
+	font-size: 1em;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+	font-weight: 600; 
+	cursor: pointer; 
+}
+.lc_commentBtn:hover, .lc_commentBtn:focus {
+	background-color: #3480b4;
+	border-color: #3480b4;
+}
+.lc_comment_nav a, .lc_comment_nav a:visited {
+	font-size: 0.9em;
+	padding: 5px;
+	border-radius: 4px;
+	background: #bdbbcd;
+	color: #fff;
+	margin: 5px;
+}
+.lc_comment_nav a:focus, .lc_comment_nav a:hover {
+	background: #9d9bad;
+	color: #fff;
+}
+.commentmetadata {
+    font-size: 0.8em;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.lc_comment_list li {
+    border-bottom: 1px dashed #bdbbcd;
+    padding: 10px;
+    margin: 10px auto;
+}
+.fn {
+    font-weight: 700;
+    color: #5d5b6d;
+}
+.comment-body p {
+    font-size: 1.2em;
+}

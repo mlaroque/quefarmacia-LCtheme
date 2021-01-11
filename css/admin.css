@@ -1,0 +1,105 @@
+#advanced-sortables .postbox { 
+	border-color: lightseagreen;
+}
+#advanced-sortables .postbox h2 { 
+	color: lightseagreen; 
+	font-size: 1.4em; 
+	text-transform: uppercase; 
+	border-bottom-color: lightseagreen; 
+}
+.metas-label{
+	font-size: 1em;
+	font-weight: bold;
+	margin-right: 4px;
+}
+.metas-input-txt{
+	font-size: 1em; 
+	width: 100%; 
+	margin-bottom: 15px;
+}
+::placeholder { 
+	color: #7d7b8d; 
+	opacity: 1; 
+}
+.lc_label { 
+	color: #5d5b6d; 
+	font-size: 1.2em; 
+	margin: 10px auto 5px 0; 
+	display: block; 
+	letter-spacing: 0.1em; 
+}
+.lc_form_help { 
+	color: #7d7b8d; 
+	font-size: 1.01em; 
+	margin: 0 auto 3px 0 
+}
+.lc_input { 
+	font-size: 1.2em; 
+	padding: 6px 10px !important; 
+	border-color: #bdbdbd !important; 
+}
+.lc_select { 
+	width: 100%; 
+	font-size: 1.2em; 
+	padding: 6px 10px !important; 
+	border-color: #bdbdbd !important; 
+}
+.lc_select::after{
+	content:"\025be";
+	display:table-cell;
+	padding-top:7px;
+	text-align:center;
+	width:30px;
+	height:30px;
+	background-color:#d9d9d9;
+	position:absolute;
+	top:0;
+	right:0px;	
+	pointer-events: none;
+}
+.lc_select_multi { 
+	color: #7d7b8d; 
+	width:100%; 
+	font-size: 1.2em; 
+	padding: 6px 10px !important; 
+	border-color: #bdbdbd !important; 
+	height: 200px !important; 
+}
+.lc_select select,
+.lc_select option,
+.lc_select_multi select,
+.lc_select_multi option {
+  color: #7d7b8d; padding: 4px
+}
+.lc_select option:hover, 
+.lc_select_multi option:hover { 
+	color:#fff; 
+	background-color:lightseagreen; 
+}
+#advanced-sortables .postbox input[type="checkbox"]:focus, 
+#advanced-sortables .postbox input[type="color"]:focus, 
+#advanced-sortables .postbox input[type="date"]:focus, 
+#advanced-sortables .postbox input[type="datetime-local"]:focus, 
+#advanced-sortables .postbox input[type="datetime"]:focus, 
+#advanced-sortables .postbox input[type="email"]:focus, 
+#advanced-sortables .postbox input[type="month"]:focus, 
+#advanced-sortables .postbox input[type="number"]:focus, 
+#advanced-sortables .postbox input[type="password"]:focus, 
+#advanced-sortables .postbox input[type="radio"]:focus, 
+#advanced-sortables .postbox input[type="search"]:focus, 
+#advanced-sortables .postbox input[type="tel"]:focus, 
+#advanced-sortables .postbox input[type="text"]:focus, 
+#advanced-sortables .postbox input[type="time"]:focus, 
+#advanced-sortables .postbox input[type="url"]:focus, 
+#advanced-sortables .postbox input[type="week"]:focus, 
+#advanced-sortables .postbox select:focus, textarea:focus { 
+	box-shadow: 0px 0px 3px 1px lightseagreen; 
+}
+.lc_textarea { 
+	color: #7d7b8d; 
+	width:100%; 
+	font-size: 1.2em; 
+	padding: 6px 10px !important; 
+	border-color: #bdbdbd !important; 
+	height: 200px !important; 
+}

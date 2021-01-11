@@ -1,0 +1,10 @@
+[{
+	"id": "104",
+	"estados": [{
+		"estado" : "quintana roo",
+		"sucursales": [{
+			"nombre": "Farmacias Paris Cancun",
+			"slug": "cancun"
+		}]
+	}]
+}]

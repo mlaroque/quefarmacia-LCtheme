@@ -1,0 +1,7 @@
+.galeria {width: 100%; display:inline-block;}
+.galeria ul { margin: 10px; padding: 0; text-align: center; }
+.galeria li {display: inline-block; width: 12%; text-align: center; background-position: center; margin: 0 5px;}
+.galeria li img {width: 100%}
+@media (min-width:482px){
+.galeria li {  width: 12%; margin: 10px; display: inline-block}
+}

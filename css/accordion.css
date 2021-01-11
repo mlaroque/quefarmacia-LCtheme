@@ -1,0 +1,22 @@
+.btn-accordion, .btn-accordion:visited {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+    width: 100%;
+    font-size: 1.02rem;
+    background: #192848;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-accordion:hover, .btn-accordion:focus {
+    background: #434d6b; 
+    color: #fff;
+}
+
+.accordion_content_style {
+    width: 100%;
+    padding: 25px;
+    background: #cecfd7;
+    color: #192848;
+}

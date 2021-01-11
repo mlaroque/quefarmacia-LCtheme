@@ -1,0 +1,26 @@
+.btn-amarillo, .btn-amarillo:visited, a.btn-amarillo {background: #ffbb02; border-color: #ffbb02; color: #fff; font-weight: 600; text-transform: uppercase; }
+.btn-amarillo:hover, .btn-amarillo:focus {background: #df9b00; border-color: #df9b00; color:#fff; }
+
+.btn-azul, .btn-azul:visited, a.btn-azul {background: #01A5C9; border-color: #01A5C9; color: #fff; font-weight: 600; text-transform: uppercase; }
+.btn-azul:hover, .btn-azul:focus {background: #0085A9; border-color: #0085A9; color:#fff; }
+
+.search-submit, .search-submit:visited, a.search-submit {background: #01A5C9; border-color: #01A5C9; color: #fff; font-weight: 600; text-transform: uppercase;
+padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; border-radius: .25rem; border:none; }
+
+.search-submit:hover, .search-submit:focus {background: #0085A9; border-color: #0085A9; color:#fff; }
+
+.btn-naranja, .btn-naranja:visited, a.btn-naranja {background: #F29439; border-color: #F29439; color: #fff; font-weight: 600; text-transform: uppercase; }
+.btn-naranja:hover, .btn-naranja:focus {background: #E28429; border-color: #E28429; color:#fff; }
+
+.btn-rojo, .btn-rojo:visited, a.btn-rojo {background: #FC3240; border-color: #FC3240; color: #fff; font-weight: 600; text-transform: uppercase; }
+.btn-rojo:hover, .btn-rojo:focus {background: #DC1220; border-color: #DC1220; color:#fff; }
+
+.btn-teal, .btn-teal:visited, a.btn-teal {background: #00B1B0; border-color: #00B1B0; color: #fff; font-weight: 600; text-transform: uppercase; }
+.btn-teal:hover, .btn-teal:focus {background: #F29439; border-color: #F29439; color:#fff; }
+
+.btn-tealL, .btn-tealL:visited, a.btn-tealL {background: #7CDBD5; border-color: #7CDBD5; color: #fff; font-weight: 600; text-transform: uppercase; }
+.btn-tealL:hover, .btn-tealL:focus {background: #02C8A7; border-color: #02C8A7; color:#fff; }
+
+
+.btn-tealRound, .btn-tealRound:visited, a.btn-tealRound { position: absolute; right: 10px; bottom: 30px; border-radius:50%; background: #00B1B0; border-color: #00B1B0; color: #fff; font-weight: 600; text-transform: uppercase; }
+.btn-tealRound:hover, .btn-tealRound:focus {background: #F29439; border-color: #F29439; color:#fff; }

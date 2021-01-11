@@ -1,0 +1,12 @@
+.BGrelacionados { background: #e5f4f8; padding: 30px 0; }
+.relacionados { border: 1px solid #5dc3da;  font-size: 1rem; margin-bottom: 30px; background: #fff; }
+.relacionados h2 { font-size: 20px; }
+.relacionados-logo { max-width: 200px; max-height: 60px; height: auto; width: auto; margin:0 auto; }
+.relacionados-info p{ margin: 2px; font-size: 1rem; }
+.relacionados-logo img { max-height: 60px; max-width: 100%; }
+.relacionados .yesNo { width: 25px; }
+.relacionados .stars img { width: 25px; }
+.relacionados table { border: none; }
+.relacionados td { padding: 4px 10px; }
+.relacionadosTit { padding: 0; color: #7c8791; font-size: 14px; letter-spacing: 2px; line-height: normal; margin: 0 auto 0 auto; }
+.relacionadosName p { margin: 0 auto; line-height: normal; font-size: 16px; }

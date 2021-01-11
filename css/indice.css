@@ -1,0 +1,49 @@
+.indice { 
+	margin-bottom: 20px; 
+	margin-right: 10px; 
+	padding-top: 12px;
+}
+
+.indice p {
+	margin: 0 auto;
+	color: #143250;
+	text-align: center;
+}
+
+.indice a, .indice a.visited { 
+	padding: 10px 0; 
+	display: block; 
+	color: #1badb5; 
+	text-decoration: none;
+}
+.indice a:focus, .indice a:hover {
+	color: #015368;
+	text-decoration: none;
+}
+.indice ul, .indice ol { 
+	list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: all .5s ease;
+}
+.indice li {
+	font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 22px;
+    padding-right: 22px;
+    position: relative;
+    display: inline-block;
+	display: block;
+    overflow: hidden;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 0;
+}
+.indice li:hover {
+	background: #429A8A;
+	text-decoration: none;
+}
+
+ 

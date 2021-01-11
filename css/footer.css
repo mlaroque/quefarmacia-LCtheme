@@ -1,0 +1,187 @@
+/**FOOTER B CSS**/
+footer { 
+	background:  #323844; 
+	margin-top: 0; 
+	padding-top: 40px; 
+}
+footer h3 { 
+	text-transform: uppercase; 
+	letter-spacing: 0.3em;
+	font-weight: 300;
+	color: #fff;
+} 
+footer li { 
+	list-style-type: none;
+	margin-bottom: 25px;
+ }
+
+footer hr { 
+	background: #ddd; 
+}
+
+
+.foot { 
+	padding-top: 40px; 
+	padding-bottom: 30px; 
+	margin: 20px auto;
+	}
+.foot ul { 
+	padding: 0; 
+	}
+.foot li { 
+	padding: 0;
+	margin: 0.5em 0;
+	font-size: 1em;
+	color: #fff;
+	font-weight: 300;
+	line-height: normal;
+	list-style-type: none;
+	width: 100%;
+	float: left;
+	}
+.foot li:after { 
+	content: ","; 
+	}
+.foot li:last-child:after { 
+	content: " "; 
+	}
+.foot li a, .foot li a:visited { 
+	padding: 0;
+	margin: 0.5em 0;
+	font-size: 1.1em;
+	color: #fff;
+	font-weight: 300;
+	line-height: normal;
+	list-style-type: none;
+	width: 100%;
+	float: left;
+	}
+.foot li a:hover, .foot li a:focus { 
+	color: #fff;
+	text-decoration: none;
+	}
+
+.foot h2, 
+.footHori h2, 
+.copy h2, 
+.footSx h2, 
+.footDx h2 { 
+	text-transform: uppercase; 
+	letter-spacing: 0.3em;
+	font-size: 1em;
+	font-weight: 300; 
+	margin-top: 30px; 
+	text-align: left; 
+	color: #fff;
+	}
+.foot p {
+	font-size: 1.1em;
+	line-height: 2.2em;
+}
+.footSx h2 { 
+	text-align: left;
+	}
+.footSx ul, .footDx ul { 
+	padding: 0; 
+	text-align: center;
+	}
+.footSx li { 
+	display: inline-flex; 
+	}
+
+.footDx h2 { 
+	text-align: right;
+	}
+.footDx li {
+	display: inline-flex;
+	}
+.footSx li a, 
+.footSx li a:visited, 
+.footDx li a, 
+.footDx li a:visited {
+	color: #fff;
+	font-size: 14px; 
+	padding: 2px 0; 
+	margin:2px;
+	}
+.footSx li a:hover,
+.footSx li a:focus,
+.footDx li a:hover,
+.footDx li a:focus {
+	color: #fff;
+	text-decoration: none;
+	}
+
+@media (min-width: 768px){
+.foot li:after { 
+	content: none;
+	}
+.foot li:last-child:after { 
+	content: none; 
+	}
+.footSx ul {
+	text-align: left;
+	}
+.footDx ul {
+	text-align: right;
+	}
+.footSx li a, 
+.footSx li a:visited, 
+.footDx li a, 
+.footDx li a:visited { 
+	padding: 10px 0; 
+	margin:4px;
+	}
+.foot li {
+	display: block;
+}
+.footHori ul li,
+{
+	display: inline-flex;
+	}
+}
+.footClaim  { 
+	color: #fff; 
+}
+.copy { 
+	color: #fff; 
+}
+.copy a, .copy a:visited { 
+	color: #fff; 
+}
+.copy a:hover, .copy a:focus { 
+	color: #fff; 
+}
+.footHori { 
+	margin: 30px 0; 
+}
+.footHori a, .footHori a:visited { 
+	color: #fff;
+}
+.copy p { 
+	color: #fff; 
+	margin: 30px 0; 
+	font-size: 14px;
+	}
+
+.footHori ul { 
+	padding: 0;
+	margin:15px auto;
+	}
+
+.footHori a:hover,
+.footHori a:focus { 
+	color: #fff; 
+	}
+.footHori li { 
+	margin:5px; 
+	display: inline;
+	}
+
+.bigText {
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 auto;
+}
