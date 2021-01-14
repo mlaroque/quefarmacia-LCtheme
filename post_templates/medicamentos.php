@@ -8,6 +8,8 @@ $GLOBALS["med_info"] = $med_info;
 
 ?>
 
+<?php get_template_part("post_templates/medicamentos/markup");?>
+
 <div class="container">
 	<div class="row">
 		<div class="col-12">
@@ -22,6 +24,10 @@ $GLOBALS["med_info"] = $med_info;
 			</div>
 
 			<?php get_template_part("post_templates/medicamentos/post-content");?>
+			<?php get_template_part("post_templates/medicamentos/boton-consultar-precios");?>
+			<?php get_template_part("post_templates/medicamentos/donde-comprar");?>
+			<h3 class="text-center">Medicamentos relacionados</h3>
+			<?php get_template_part("post_templates/medicamentos/relacionados");?>
 		</div>
 	</div>
 </div>

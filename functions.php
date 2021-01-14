@@ -321,6 +321,20 @@ register_post_type( 'analisis-y-estudios',
 
 }
 
+function save_posts_in_json(){
+
+    global $post;
+    
+    if(file_exists(get_template_directory_uri() . "/post_templates/".$post->post_type."/save-json-info")){
+      get_template_part("post_templates/".$post->post_type."/save-json-info");
+      save_post_in_json_file($post);
+    }
+    
+
+}
+
+add_action( 'save_post', 'save_posts_in_json' );
+
 
 /**************************************/
 /***********META BOXES*****************/

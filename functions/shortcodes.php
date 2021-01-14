@@ -131,5 +131,98 @@ function header_h3($params = [], $content = null) {
 }
 add_shortcode('h3','header_h3');
 
+// create pregnancy shortcode
+function pregnancy_warning($atts) {
+  
+    global $post;
+
+      extract( shortcode_atts( array(
+        'riesgo' => '',
+      ), $atts ) );
+
+      if(!$riesgo || $riesgo === ""){
+          $riesgo = get_post_meta($post->ID, 'med_riesgo_embarazo', true);
+      }
+      
+      $return_value = "";
+      $pregnancy_title = "ALTO";
+      $pregnancy_class ="danger";
+      
+      if($riesgo === "bajo" || $riesgo === "muy bajo") {
+        $pregnancy_title = strtoupper($riesgo);
+        $pregnancy_class ="success";
+      }elseif($riesgo === "medio") {
+        $pregnancy_title = "MEDIO";
+        $pregnancy_class ="warning";
+      }elseif($riesgo === "alto" || $riesgo === "muy alto" || $riesgo === "") {
+        $pregnancy_title = strtoupper($riesgo);
+        $pregnancy_class ="danger";
+      }
+
+     ob_start();?>
+     	<div><br>
+     		<h4>EMBARAZO</h4>
+     		<p class="btn-<?php echo $pregnancy_class;?>">
+     			<img data-src="<?php echo get_template_directory_uri();?>/images/emba.png" class="lazy-img">
+     			<?php if($pregnancy_title === "MEDIO"):?>
+     				RIESGO <?php echo $pregnancy_title;?></p>
+     			<?php else:?>
+     				<?php echo $pregnancy_title;?> RIESGO</p>
+     			<?php endif;?>
+     			
+     			<h5><?php echo $pregnancy_title;?></h5>
+     	</div>
+     	<div class="clearfix"></div>
+
+     <?php $return_value = ob_get_clean();
+
+  return $return_value;
+}
+add_shortcode('embarazo','pregnancy_warning');
+
+// create pregnancy shortcode
+function breastfeeding_warning($atts) {
+
+      global $post;
+      
+      extract( shortcode_atts( array(
+        'riesgo' => '',
+      ), $atts ) );
+
+      if(!$riesgo || $riesgo === ""){
+          $riesgo = get_post_meta($post->ID, 'med_riesgo_lactancia', true);
+      }
+
+      $return_value = "";
+      $breastfeeding_title = "ALTO";
+      $breastfeeding_class ="danger";
+      
+      if($riesgo === "bajo" || $riesgo === "muy bajo") {
+        $breastfeeding_title = strtoupper($riesgo);
+        $breastfeeding_class ="success";
+      }elseif($riesgo === "medio") {
+        $breastfeeding_title = "MEDIO";
+        $breastfeeding_class ="warning";
+      }elseif($riesgo === "alto" || $riesgo === "muy alto" || $riesgo === "") {
+        $breastfeeding_title = strtoupper($riesgo);
+        $breastfeeding_class ="danger";
+      }
+
+     ob_start();?>
+     	<div><br>
+     		<h4>LACTANCIA</h4>
+     		<p class="btn-<?php echo $breastfeeding_class;?>">
+     			<img data-src="<?php echo get_template_directory_uri();?>/images/lact.png" class="lazy-img">
+     			<?php echo $breastfeeding_title;?> RIESGO</p>
+     			<h5><?php echo $breastfeeding_title;?></h5>
+     	</div>
+     	<div class="clearfix"></div>
+
+     <?php $return_value = ob_get_clean();
+    
+  return $return_value;
+}
+add_shortcode('lactancia','breastfeeding_warning');
+
 
 ?>

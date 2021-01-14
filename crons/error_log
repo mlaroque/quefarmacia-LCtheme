@@ -1,0 +1,17 @@
+[14-Jan-2021 17:22:31 UTC] PHP Warning:  Declaration of LCMN_Walker::start_lvl(&$output, $item, $depth) should be compatible with Walker_Nav_Menu::start_lvl(&$output, $depth = 0, $args = NULL) in /home/lcmnquesuper/public_html/wp-content/themes/LCtheme2020/functions/utils.php on line 0
+[14-Jan-2021 17:23:00 UTC] PHP Warning:  Declaration of LCMN_Walker::start_lvl(&$output, $item, $depth) should be compatible with Walker_Nav_Menu::start_lvl(&$output, $depth = 0, $args = NULL) in /home/lcmnquesuper/public_html/wp-content/themes/LCtheme2020/functions/utils.php on line 0
+[14-Jan-2021 18:00:05 UTC] PHP Warning:  Declaration of LCMN_Walker::start_lvl(&$output, $item, $depth) should be compatible with Walker_Nav_Menu::start_lvl(&$output, $depth = 0, $args = NULL) in /home/lcmnquesuper/public_html/wp-content/themes/LCtheme2020/functions/utils.php on line 0
+[14-Jan-2021 18:02:34 UTC] PHP Warning:  Declaration of LCMN_Walker::start_lvl(&$output, $item, $depth) should be compatible with Walker_Nav_Menu::start_lvl(&$output, $depth = 0, $args = NULL) in /home/lcmnquesuper/public_html/wp-content/themes/LCtheme2020/functions/utils.php on line 0
+[14-Jan-2021 20:07:27 UTC] PHP Warning:  Declaration of LCMN_Walker::start_lvl(&$output, $item, $depth) should be compatible with Walker_Nav_Menu::start_lvl(&$output, $depth = 0, $args = NULL) in /home/lcmnquesuper/public_html/wp-content/themes/LCtheme2020/functions/utils.php on line 0
+[14-Jan-2021 20:07:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/lcmnquesuper/public_html/wp-content/themes/LCtheme2020/post_templates/medicamentos/save-json-info.php:11
+Stack trace:
+#0 /home/lcmnquesuper/public_html/wp-content/themes/LCtheme2020/crons/create_info_medicamentos_jsons.php(19): save_post_in_json_file(Object(WP_Post))
+#1 {main}
+  thrown in /home/lcmnquesuper/public_html/wp-content/themes/LCtheme2020/post_templates/medicamentos/save-json-info.php on line 11
+[14-Jan-2021 20:12:18 UTC] PHP Warning:  Declaration of LCMN_Walker::start_lvl(&$output, $item, $depth) should be compatible with Walker_Nav_Menu::start_lvl(&$output, $depth = 0, $args = NULL) in /home/lcmnquesuper/public_html/wp-content/themes/LCtheme2020/functions/utils.php on line 0
+[14-Jan-2021 20:12:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/lcmnquesuper/public_html/wp-content/themes/LCtheme2020/post_templates/medicamentos/save-json-info.php:13
+Stack trace:
+#0 /home/lcmnquesuper/public_html/wp-content/themes/LCtheme2020/crons/create_info_medicamentos_jsons.php(18): save_post_in_json_file(Object(WP_Post))
+#1 {main}
+  thrown in /home/lcmnquesuper/public_html/wp-content/themes/LCtheme2020/post_templates/medicamentos/save-json-info.php on line 13
+[14-Jan-2021 20:17:01 UTC] PHP Warning:  Declaration of LCMN_Walker::start_lvl(&$output, $item, $depth) should be compatible with Walker_Nav_Menu::start_lvl(&$output, $depth = 0, $args = NULL) in /home/lcmnquesuper/public_html/wp-content/themes/LCtheme2020/functions/utils.php on line 0
